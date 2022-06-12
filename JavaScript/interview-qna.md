@@ -1,14 +1,20 @@
 # # JavaScript Interview Qs & As
 
+**Sources**
+1 to 5
+[Frontend Interview Experience (Cars24) - Javascript and React JS Interview Questions](https://www.youtube.com/watch?v=vxggZffOqek&t=7s)
+
+6 to 7
+[InterviewBit JavaScript Interview Questions](https://www.interviewbit.com/javascript-interview-questions/)
+
+
 Index
 1. Hoisting
 2. Implicit and Explicit Binding OR this Binding
 3. Implement Caching/Memoize Function
 4. Output Based Question on Event Loop
 5. Infinite Currying
-
-
-[Frontend Interview Experience (Cars24) - Javascript and React JS Interview Questions](https://www.youtube.com/watch?v=vxggZffOqek&t=7s)
+6. What are the different data types present in javascript?
 
 
 #### #1 Hoisting
@@ -200,7 +206,32 @@ Backlog
 #3 How Promise works?
 #4 Event Loop
 
+---
 
 #### #5 Infinite Currying
 
 
+
+
+
+---
+
+#### #6 What are the different data types present in javascript?
+
+Primitives
+- Boolean
+- Null
+- Undefined
+- Numeric
+  - Number
+  - BigInt
+  - NaN
+- String
+- Symbol
+
+Non-primitives
+- Objects
+
+Use `typeof` operator to know the type of a variable.
+
+[MDN - JavaScript data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
