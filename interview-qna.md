@@ -1,5 +1,10 @@
 # # Laravel Interview Qs & As
 
+Reference:
+[InterviewBit Laravel Interview Questions](https://www.interviewbit.com/laravel-interview-questions/)
+
+---
+
 Index
 1. What is the latest Laravel version?
 2. Define Composer
@@ -9,15 +14,15 @@ Index
 6. How to define environment variables in Laravel?
 7. Can we use Laravel for Full Stack Development (Frontend + Backend)?
 8. How to put Laravel applications in maintenance mode?
+9. Displaying Unescaped Data OR {{ }} vs {!! !!} in Blade templates.
 
-[InterviewBit Laravel Interview Questions](https://www.interviewbit.com/laravel-interview-questions/)
-
+---
 
 ## #1 What is the latest Laravel version?
 
 As of writing this the latest Laravel version is 9.x.
 
-----
+---
 
 ## #2 Define Composer.
 
@@ -135,7 +140,7 @@ Summary with examples
 
 Refer [Version Constraints](https://getcomposer.org/doc/articles/versions.md)
 
-----
+---
 
 ## #3 Templating engine used in Laravel
 
@@ -154,7 +159,7 @@ Laravel allows us to write plain PHP templates as well. Using Blade is not manda
 
 Refer [Blade Templates](https://laravel.com/docs/9.x/blade)
 
-----
+---
 
 ## #4 What are available databases supported by Laravel?
 
@@ -166,7 +171,7 @@ Laravel provides first-party support for four databases:
 
 Refer [Database: Getting Started](https://laravel.com/docs/9.x/database)
 
-----
+---
 
 ## #5 What is an artisan?
 
@@ -223,7 +228,7 @@ Create a new job class.
 `php artisan make:middleware`
 Create a new middleware class.
 
-----
+---
 
 ## #6 How to define environment variables in Laravel?
 
@@ -255,7 +260,7 @@ repository, since any sensitive credentials would get exposed.
 
 Refer [Configuration](https://laravel.com/docs/9.x/configuration)
 
-----
+---
 
 ## #7 Can we use Laravel for Full Stack Development (Frontend + Backend)?
 
@@ -271,7 +276,7 @@ and render your frontend via "Blade" templates or using a single-page applicatio
 "Inertia.js".
 This is the most common way to use the Laravel framework.
 
-----
+---
 
 ## #8 How to put Laravel applications in maintenance mode?
 
@@ -305,3 +310,18 @@ at resources/views/errors/503.blade.php.
 While your application is in maintenance mode, no queued jobs will be handled.
 The jobs will continue to be handled as normal once the application is out of the maintenance mode.
 
+---
+
+## #9 Displaying Unescaped Data OR {{ }} vs {!! !!} in Blade templates.
+
+By default, Blade {{ }} statements are automatically sent through PHP's `htmlspecialchars` function 
+to prevent **XSS attacks**.
+If you do not want your data to be escaped, you may use the following syntax:
+
+```
+Hello, {!! $name !!}.
+```
+
+> Be very careful when echoing content that is supplied by users of your application. You should typically use the escaped, double curly brace syntax to prevent XSS attacks when displaying user supplied data.
+
+[Laravel Docs - Displaying Unescaped Data](https://laravel.com/docs/9.x/blade#displaying-unescaped-data)
