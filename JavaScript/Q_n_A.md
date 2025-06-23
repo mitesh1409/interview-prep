@@ -1,4 +1,3 @@
-
 ## Question-1: Log your name and favorite hobby to the console.
 
 ```JavaScript
