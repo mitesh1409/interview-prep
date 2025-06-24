@@ -119,6 +119,123 @@ console.log('typeof 1000', typeof 1000); // number
 
 ---
 
+## Question-11: Declare a variable using let and log its value.
+
+```JavaScript
+let username;
+console.log('username', username);
+```
+
+---
+
+## Question-12: Create a constant to store the value of pi and log it.
+
+```JavaScript
+const PI = Math.PI
+console.log('PI', PI);
+```
+
+---
+
+## Question-13: Reassign a value to a variable declared with let and log the new value.
+
+```JavaScript
+username = 'mitesh_prajapati';
+console.log('username', username);
+
+username = 'john_wick';
+console.log('username', username);
+```
+
+---
+
+## Question-14: Check the type of null, undefined, NaN and log it.
+
+```JavaScript
+console.log('Type of null:', typeof null);
+console.log('Type of undefined:', typeof undefined);
+console.log('Type of NaN:', typeof NaN);
+```
+
+---
+
+## Question-15: Create a variable with a number as a string and log its type.
+
+```JavaScript
+const fifty = '50';
+console.log('Type of fifty:', typeof fifty);
+```
+
+---
+
+## Question-16: Use typeof to check the type of a boolean variable and log it.
+
+```JavaScript
+let isWeekend = false;
+console.log('Type of isWeekend:', typeof isWeekend);
+```
+
+---
+
+## Question-17: Create three variables of types string, number, and boolean, and log their values and types.
+
+```JavaScript
+let songTitle = 'Shape of You';
+const ADULT_AGE = 18;
+let isWeekday = true;
+
+console.log('songTitle:', songTitle, 'Type:', typeof songTitle);
+console.log('ADULT_AGE:', ADULT_AGE, 'Type:', typeof ADULT_AGE);
+console.log('isWeekday:', isWeekday, 'Type:', typeof isWeekday);
+```
+
+---
+
+## Question-18: Declare a variable without initializing it and log its type.
+
+```JavaScript
+let uninitializedVar;
+console.log('uninitializedVar:', uninitializedVar, 'Type:', typeof uninitializedVar);
+```
+
+---
+
+## Question-19: NaN === NaN, what is the result? Log it.
+
+```JavaScript
+console.log('NaN === NaN:', NaN === NaN); // false, because NaN is not equal to anything, including itself
+```
+
+---
+
+## Question-20: Create a variable with undefined value and log its type.
+
+```JavaScript
+let undefinedVar = undefined;
+console.log('undefinedVar:', undefinedVar, 'Type:', typeof undefinedVar);
+```
+
+---
+
+## Question-21: Use const to create an array. Try reassigning the array and observe the behavior.
+
+```JavaScript
+const fruits = ['apple', 'banana', 'cherry'];
+console.log('fruits:', fruits);
+
+// fruits = ['orange', 'grape']; // Uncaught TypeError: Assignment to constant variable.
+// console.log('fruits:', fruits);
+
+fruits.push('orange'); // This is allowed, as we are modifying the contents of the array, not reassigning it.
+console.log('fruits after push:', fruits);
+
+fruits.pop(); // This is also allowed, as we are modifying the contents of the array.
+console.log('fruits after pop:', fruits);
+```
+
+---
+
+
 ## Reference
 
 - [Sheryians Coding School | 50 JavaScript Interview Questions Solved in 1 Hour](https://www.youtube.com/watch?v=qTszFuibDEg)
