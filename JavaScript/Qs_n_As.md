@@ -1,10 +1,12 @@
-# = = = = = = = = = = E A S Y = = = = = = = = = =
+# JavaScript Interview Questions & Answers
 
 ## Source - [Sheryians Coding School | 50 JavaScript Interview Questions Solved in 1 Hour](https://www.youtube.com/watch?v=qTszFuibDEg)
 
 ---
 
 ## Question-1: Log your name and favorite hobby to the console.
+
+Answer
 
 ```JavaScript
 console.log('Mitesh', 'I love to build things!');
@@ -14,6 +16,8 @@ console.log('Mitesh', 'I love to build things!');
 
 ## Question-2: Perform and log the result of 45 * 2 - 10.
 
+Answer
+
 ```JavaScript
 console.log(45 * 2 - 10);
 ```
@@ -22,11 +26,15 @@ console.log(45 * 2 - 10);
 
 ## Question-3.1: Use console.log to display the current year.
 
+Answer
+
 ```JavaScript
 console.log(new Date().getFullYear());
 ```
 
 ## Question-3.2: Use console.log to display the current date and time.
+
+Answer
 
 ```JavaScript
 console.log(new Date());
@@ -34,11 +42,15 @@ console.log(new Date());
 
 ## Question-3.3: Use console.log to display the current date and time in US timezone.
 
+Answer
+
 ```JavaScript
 console.log(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
 ```
 
 ## Question-3.4: Use console.log to display the current date and time in UK timezone.
+
+Answer
 
 ```JavaScript
 console.log(new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
@@ -47,6 +59,8 @@ console.log(new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
 ---
 
 ## Question-4: Create two variables - firstName and lastName, concatenate them, and log the full name.
+
+Answer
 
 ```JavaScript
 const firstName = 'Mitesh';
@@ -58,6 +72,8 @@ console.log(`${firstName} ${lastName}`);
 ---
 
 ## Question-5: Track the value of a variable - log its value, change it, and log it again.
+
+Answer
 
 ```JavaScript
 // Initial balance.
@@ -78,6 +94,8 @@ console.log('money', money);
 
 ## Question-6: Use console.error to log an error message.
 
+Answer
+
 ```JavaScript
 console.error('This is an error message!');
 ```
@@ -85,6 +103,8 @@ console.error('This is an error message!');
 ---
 
 ## Question-7: Log the square of the number 12 to the console.
+
+Answer
 
 ```JavaScript
 const number = 12;
@@ -97,6 +117,8 @@ console.log(`The square of ${number} is ${Math.pow(number, 2)}`);
 
 ## Question-8: Log the type of the variable holding the value true.
 
+Answer
+
 ```JavaScript
 const isTrue = true;
 console.log(`The type of isTrue is ${typeof isTrue}`);
@@ -106,8 +128,11 @@ console.log(`The type of isTrue is ${typeof isTrue}`);
 
 ## Question-9: Create a variable holding your age and log whether you are an adult or not (age > 18 means you are an adult).
 
+Answer
+
 ```JavaScript
 const age = 39;
+
 if (age > 18) {
   console.log('You are an adult.');
 } else {
@@ -118,6 +143,8 @@ if (age > 18) {
 ---
 
 ## Question-10: Log the result of 100 / 0 and observe the output.
+
+Answer
 
 ```JavaScript
 console.log(100 / 0); // Infinity
@@ -130,6 +157,8 @@ console.log('typeof 1000', typeof 1000); // number
 
 ## Question-11: Declare a variable using let and log its value.
 
+Answer
+
 ```JavaScript
 let nickName;
 console.log('nickName', nickName);
@@ -139,14 +168,19 @@ console.log('nickName', nickName);
 
 ## Question-12: Create a constant to store the value of pi and log it.
 
+Answer
+
 ```JavaScript
 const PI = Math.PI;
 console.log('PI', PI);
+console.log(typeof PI); // number
 ```
 
 ---
 
 ## Question-13: Reassign a value to a variable declared with let and log the new value.
+
+Answer
 
 ```JavaScript
 let username = 'mitesh_prajapati';
@@ -160,33 +194,43 @@ console.log('username', username);
 
 ## Question-14: Check the type of null, undefined, NaN and log it.
 
+Answer
+
 ```JavaScript
-console.log('Type of null:', typeof null);
-console.log('Type of undefined:', typeof undefined);
-console.log('Type of NaN:', typeof NaN);
+console.log('Type of null:', typeof null); // Type of null: object
+
+console.log('Type of undefined:', typeof undefined); // Type of undefined: undefined
+
+console.log('Type of NaN:', typeof NaN); // Type of NaN: number
 ```
 
 ---
 
 ## Question-15: Create a variable with a number as a string and log its type.
 
+Answer
+
 ```JavaScript
 const fifty = '50';
-console.log('Type of fifty:', typeof fifty);
+console.log('Type of fifty:', typeof fifty); // Type of fifty: string
 ```
 
 ---
 
 ## Question-16: Use typeof to check the type of a boolean variable and log it.
 
+Answer
+
 ```JavaScript
 let isWeekend = false;
-console.log('Type of isWeekend:', typeof isWeekend);
+console.log('Type of isWeekend:', typeof isWeekend); // Type of isWeekend: boolean
 ```
 
 ---
 
 ## Question-17: Create three variables of types string, number, and boolean, and log their values and types.
+
+Answer
 
 ```JavaScript
 let songTitle = 'Shape of You';
@@ -202,6 +246,8 @@ console.log('isWeekday:', isWeekday, 'Type:', typeof isWeekday);
 
 ## Question-18: Declare a variable without initializing it and log its type.
 
+Answer
+
 ```JavaScript
 let uninitializedVar;
 console.log('uninitializedVar:', uninitializedVar, 'Type:', typeof uninitializedVar);
@@ -211,6 +257,8 @@ console.log('uninitializedVar:', uninitializedVar, 'Type:', typeof uninitialized
 
 ## Question-19: NaN === NaN, what is the result? Log it.
 
+Answer
+
 ```JavaScript
 console.log('NaN === NaN:', NaN === NaN); // false, because NaN is not equal to anything, including itself
 ```
@@ -218,6 +266,8 @@ console.log('NaN === NaN:', NaN === NaN); // false, because NaN is not equal to 
 ---
 
 ## Question-20: Create a variable with undefined value and log its type.
+
+Answer
 
 ```JavaScript
 let undefinedVar = undefined;
@@ -227,6 +277,8 @@ console.log('undefinedVar:', undefinedVar, 'Type:', typeof undefinedVar);
 ---
 
 ## Question-21: Use const to create an array. Try reassigning the array and observe the behavior.
+
+Answer
 
 ```JavaScript
 const fruits = ['apple', 'banana', 'cherry'];
@@ -246,6 +298,8 @@ console.log('fruits after pop:', fruits);
 
 ## Question-22: Write a for loop to print numbers from 1 to 50.
 
+Answer
+
 ```JavaScript
 for (let i = 1; i <= 50; i++) {
   console.log(i);
@@ -255,6 +309,8 @@ for (let i = 1; i <= 50; i++) {
 ---
 
 ## Question-23: Use a while loop to sum numbers from 1 to 100 and log the result.
+
+Answer
 
 ```JavaScript
 let sum = 0;
@@ -270,6 +326,8 @@ console.log('Sum from 1 to 100:', sum);
 
 ## Question-24: Create a for...of loop to log each character of a string.
 
+Answer
+
 ```JavaScript
 const str = "JavaScript is Awesome!";
 for (const char of str) {
@@ -280,6 +338,8 @@ for (const char of str) {
 ---
 
 ## Question-25: Write a for loop that skips even numbers and logs only odd numbers from 1 to 20.
+
+Answer
 
 ```JavaScript
 for (let num = 1; num <= 20; num++) {
@@ -293,6 +353,8 @@ for (let num = 1; num <= 20; num++) {
 
 ## Question-26: Use a do...while loop to log numbers from 10 to 1 in reverse order.
 
+Answer
+
 ```JavaScript
 let number = 10;
 do {
@@ -304,6 +366,8 @@ do {
 ---
 
 ## Question-27: Create a for loop to calculate the factorial of a number (e.g., 5) and log the result.
+
+Answer
 
 ```JavaScript
 // const num = 5;
@@ -332,6 +396,8 @@ console.log(`Factorial of ${num} is ${factorial(num)}`);
 ---
 
 ## Question-28: Write a nested loop to print a 3 X 3 grid of numbers in a matrix format.
+
+Answer
 
 ```JavaScript
 // let aNumber = 1;
@@ -365,6 +431,8 @@ for (let row = 1; row <= 3; row++) {
 ---
 
 ## Question-29: Write a for loop to reverse an array of numbers and log the reversed array.
+
+Answer
 
 ```JavaScript
 // Way 1: Using a for loop to reverse an array, keeping the original array intact.
@@ -408,6 +476,8 @@ console.log('Reversed array:', oneToTwentyFive);
 
 ## Question-30: Write a while loop that logs numbers from 1 to 100 divisible by 5.
 
+Answer
+
 ```JavaScript
 let i = 1;
 while (i <= 100) {
@@ -415,6 +485,14 @@ while (i <= 100) {
     console.log(i);
   }
   i++;
+}
+
+// OR
+
+let num = 5;
+while (num <= 100) {
+  console.log(num);
+  num += 5;
 }
 ```
 
