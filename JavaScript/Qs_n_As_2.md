@@ -17,14 +17,40 @@
 
 ---
 
+## 🚀 Advanced JavaScript Concepts
+
+- [X] Learn the differences and proper use of **`let`** and **`const`**.
+- [ ] Understand and implement **arrow functions**.
+- [ ] Practice using **template literals** for string interpolation.
+- [ ] Master **destructuring** for arrays and objects.
+- [ ] Understand and use the **spread/rest** operators.
+- [ ] Learn to use **Modules** with the **`import`** and **`export`** syntax.
+- [ ] Differentiate between **default vs named exports**.
+- [ ] Study asynchronous patterns using **callbacks**.
+- [ ] Master **promises** for handling asynchronous operations.
+- [ ] Implement and understand **`async`/`await`** for cleaner asynchronous code.
+- [ ] Learn basic **error handling** with **`try`/`catch`** blocks.
+- [ ] Study how to create and use **custom errors**.
+- [ ] Understand the difference between **Deep vs Shallow Copy**.
+- [ ] Explore the concept of **Immutability** in JavaScript.
+- [ ] Learn to use **`Object.assign`** for shallow copying and merging objects.
+- [ ] Understand when to use **`structuredClone`** for deep copying.
+
+---
+
 ## Backlog
 
+- [ ] Lexical Scope (merge with #7 above)
+- tagged templates (merge with #15 above)
 - [ ] Functions as first class citizens in JavaScript
 - [ ] Function expression, Function statement
 - [ ] Higher order functions
 - [ ] Pure functions
 - [ ] IIFE
 - [ ] Memory Leaks
+- Optional chaining
+- Nullish coalescing
+- Classes
 - https://nodejs.org/en/learn/getting-started/how-much-javascript-do-you-need-to-know-to-use-nodejs
 
 ---
@@ -1425,3 +1451,258 @@ A **memory leak** occurs when memory that is no longer needed by the application
 
 ---
 
+## #13 Learn the differences and proper use of **`let`**, **`const`** and **`var`**.
+
+### `var`, `let`, and `const`
+
+The introduction of `let` and `const` in ES6 (ECMAScript 2015) addressed many of the common issues and ambiguities associated with `var`, fundamentally changing how variables are scoped and used in JavaScript.
+
+| Feature | `var` (Legacy) | `let` (Modern) | `const` (Modern) |
+| :--- | :--- | :--- | :--- |
+| **Scope** | **Function-scoped** or Global-scoped. Ignores block scope (`if`, `for` loops). | **Block-scoped**. Confined to the nearest pair of curly braces (`{}`). | **Block-scoped**. Confined to the nearest pair of curly braces (`{}`). |
+| **Hoisting** | Hoisted to the top of its scope and initialized with **`undefined`**. | Hoisted, but remains **uninitialized** (in the **Temporal Dead Zone / TDZ**) until the declaration is reached. | Hoisted, but remains **uninitialized** (in the **Temporal Dead Zone / TDZ**) until the declaration is reached. |
+| **Re-declaration** | **Allowed** in the same scope without error. | **Not Allowed** in the same scope. Throws a `SyntaxError`. | **Not Allowed** in the same scope. Throws a `SyntaxError`. |
+| **Re-assignment** | **Allowed** (can change the value later). | **Allowed** (can change the value later). | **Not Allowed** (must be initialized on declaration and cannot change the value). |
+
+---
+
+### Key Differences and Implications
+
+#### 1\. Scoping Rule: Function vs. Block
+
+| Keyword | Example | Implication |
+| :--- | :--- | :--- |
+| **`var`** | ` javascript for (var i = 0; i < 1; i++) {} console.log(i); // Output: 1 (leaks outside loop)  ` | `var` is **function-scoped**. The loop body is a block, but `i` leaks out and is accessible globally or throughout the function. |
+| **`let`/`const`** | ` javascript for (let j = 0; j < 1; j++) {} console.log(j); // ReferenceError: j is not defined (contained)  ` | `let` and `const` are **block-scoped**. The variable `j` is confined to the loop block, preventing accidental access or collisions. |
+
+#### 2\. Hoisting and the Temporal Dead Zone (TDZ)
+
+| Keyword | Example | Implication |
+| :--- | :--- | :--- |
+| **`var`** | ` javascript console.log(a); // undefined var a = 10;  ` | Since `var a` is hoisted and initialized to `undefined`, the code executes without crashing, but its output is often unexpected. |
+| **`let`/`const`** | ` javascript console.log(b); // ReferenceError: b is not defined let b = 10;  ` | `let/const` is hoisted but uninitialized. Attempting to access it results in a **ReferenceError**, which is a better signal to the developer that they used the variable before declaring it. This period of inaccessibility is the **TDZ**. |
+
+#### 3\. Mutability (`let` vs. `const`)
+
+| Keyword | Example | Implication |
+| :--- | :--- | :--- |
+| **`let`** | ` javascript let name = 'Bob'; name = 'Alice'; // Allowed  ` | Use `let` for variables whose value is expected to change (e.g., counters in a loop, re-assigned variables). |
+| **`const`** | ` javascript const PI = 3.14; PI = 3.141; // TypeError: Assignment to constant variable.  ` | Use `const` for variables whose value should **never** change. This does **not** mean the value is immutable, only that the variable **binding** cannot be re-assigned. |
+
+**Important `const` Note:**
+For non-primitive values (objects or arrays), `const` prevents re-assignment of the variable itself, but it **does not** prevent mutation of the object/array contents.
+
+```javascript
+const user = { name: 'Bob' };
+user.name = 'Alice'; // ALLOWED (mutating the object content)
+// user = { name: 'Charlie' }; // NOT ALLOWED (re-assigning the variable)
+```
+
+---
+
+### Best Practices (The Modern Standard) 🌟
+
+1. **Avoid `var`:** In all new code, completely discontinue the use of `var`. It is legacy and causes scope confusion, making code harder to maintain and debug.
+2. **Prioritize `const`:** Start with `const` for every variable declaration. If you find that you must re-assign the variable later, and only then, switch to `let`. This makes your code more declarative and minimizes unexpected changes.
+3. **Use `let` Sparingly:** Reserve `let` for things like loop counters, or values that genuinely need to change over the life cycle of a function (e.g., a total score).
+4. **Block Scope Awareness:** Utilize the block scope of `let` and `const` to keep variables contained locally, improving code isolation and preventing accidental global pollution.
+
+---
+
+### 🔗 References
+
+* **MDN Web Docs:** [`var` - JavaScript](https://www.google.com/search?q=%5Bhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var%5D\(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var\)), [`let` - JavaScript](https://www.google.com/search?q=%5Bhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let%5D\(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let\)), [`const` - JavaScript](https://www.google.com/search?q=%5Bhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const%5D\(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const\))
+* **javascript.info:** [var, let, const difference](https://www.google.com/search?q=https://javascript.info/var-let-const)
+
+---
+
+## #14 Understand and implement **Arrow Functions**. **Arrow Functions** Vs **Regular Functions**, when to use what?
+
+### Arrow Functions vs. Regular Functions
+
+Arrow functions (introduced in ES6) are a compact alternative to traditional function expressions, but they are not just syntactic sugar; their main difference lies in how they handle `this`, arguments, and constructors.
+
+### The Differences
+
+| Feature | Arrow Function (`=>`) | Regular Function (`function`) |
+| :--- | :--- | :--- |
+| **Syntax** | Concise; single-expression body allows implicit `return`. | Verbose; requires `return` keyword for output. |
+| **`this` Binding** | **Lexically scoped.** Inherits `this` from the surrounding parent scope (the place where it's defined). **Cannot** be bound dynamically. | **Dynamically scoped.** `this` is determined by *how* the function is called (Default, Implicit, Explicit, or `new` binding). |
+| **`arguments` Object** | **No** `arguments` object. Must use the **Rest Parameter** (`...args`). | Has its own local `arguments` object, containing all passed arguments. |
+| **As a Constructor** | **Cannot** be used with the `new` keyword. Throws a `TypeError`. | **Can** be used as a constructor function to create new objects. |
+| **Method Usage** | Generally **not suitable** for object methods due to lack of dynamic `this`. | **Suitable** for object methods. |
+
+---
+
+### 1\. `this` Binding: The Crucial Distinction
+
+This is the single most important difference. Arrow functions do not create their own `this` context.
+
+#### Regular Function (`function`): Dynamic `this`
+
+The value of `this` is determined when the function is **called**.
+
+```javascript
+const user = {
+    name: 'Alice',
+    logRegular: function() {
+        // 'this' is bound to the 'user' object (Implicit Binding)
+        console.log('Regular:', this.name);
+    }
+};
+user.logRegular(); // Output: Regular: Alice
+```
+
+#### Arrow Function (`=>`): Lexical `this`
+
+The value of `this` is determined when the function is **defined** (from the surrounding code block).
+
+```javascript
+const user = {
+    name: 'Alice',
+    logArrow: () => {
+        // 'this' is inherited from the surrounding scope, which is usually the Global/Window object.
+        console.log('Arrow:', this.name); 
+    }
+};
+user.logArrow(); // Output: Arrow: undefined (or empty string, because 'this' is the global object, which lacks a 'name' property)
+```
+
+**Key Use Case:** The power of lexical `this` is best seen inside callbacks, where you want to retain the `this` of the outer function:
+
+```javascript
+function Timer() {
+    this.seconds = 0; // 'this' refers to the Timer instance
+
+    setInterval(() => {
+        // Arrow function inherits 'this' from the outer Timer function/scope
+        this.seconds++;
+        // If this was a regular function, 'this' inside would be the Global object.
+    }, 1000);
+}
+// new Timer().seconds will update correctly because of the arrow function
+```
+
+---
+
+### 2\. Syntax and Implicit Return
+
+Arrow functions offer concise syntax, especially for single-expression returns.
+
+| Regular Function | Arrow Function |
+| :--- | :--- |
+| ` javascript const add = function(a, b) { return a + b; };  ` | ` javascript const add = (a, b) => a + b;  ` |
+| ` javascript const square = function(x) { return x * x; };  ` | ` javascript const square = x => x * x; // Single argument, no parentheses needed  ` |
+
+**Note on returning objects:** To implicitly return an object literal, you must wrap it in parentheses: `const getObj = () => ({ key: 'value' });`
+
+---
+
+### When to Use What
+
+| Scenario | Recommendation | Why? |
+| :--- | :--- | :--- |
+| **Object Methods** | **Regular Function** | Need the dynamic, implicit `this` binding to refer to the object itself. |
+| **Constructors** | **Regular Function** | Arrow functions cannot be used with `new`. |
+| **Global Functions** | **Regular Function** | For functions exposed to the global scope or used across modules. |
+| **Array Methods** (`map`, `filter`, `reduce`) | **Arrow Function** | Conciseness and clean syntax make them ideal for quick, simple callbacks. |
+| **Callbacks (especially Timers/Events)** | **Arrow Function** | Guarantees that `this` retains the context of the surrounding scope, avoiding the common need for binding (`.bind(this)`) or storing `this` in a local variable (`that = this`). |
+
+---
+
+### 🔗 References
+
+* **MDN Web Docs:** [Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+* **javascript.info:** [Arrow functions revisited](https://javascript.info/arrow-functions-basics)
+
+---
+
+## #15 Practice using **template literals** for string interpolation.
+
+### Template Literals
+
+**Template literals** (or template strings) are a modern way to create strings in JavaScript, offering enhanced features like **string interpolation** and **multi-line strings**. They are defined using the **backtick** (`` ` ``) character, instead of single (``'``) or double (``"``) quotes.
+
+### What, Why, and How
+
+| Aspect | Details |
+| :--- | :--- |
+| **What is it?** | A string literal delimited by **backticks** (`` ` `` `` ` ``) that allows for embedded expressions and multi-line text. |
+| **Why use it?** | **Readability:** Makes dynamic strings with variables much cleaner. **Functionality:** Easily supports multi-line strings and advanced features like tagged templates. |
+| **How to use it?** | Use **backticks** (`` ` `` `` ` ``) to enclose the string, and embed JavaScript expressions inside a **placeholder** using the dollar sign and curly braces: $\texttt{\$\{expression\}}$ |
+
+---
+
+### 1\. String Interpolation (The Main Use Case) 💉
+
+**String interpolation** is the process of embedding variables or expressions directly within a string without breaking the string or using the concatenation operator ($\texttt{+}$).
+
+#### Code Example (Comparison)
+
+| Traditional Concatenation (Pre-ES6) | Template Literal Interpolation (ES6+) |
+| :--- | :--- |
+| ` javascript const name = 'Bob'; const age = 30; console.log("Hello, my name is " + name + " and I am " + age + " years old.");  ` | `` javascript const name = 'Bob'; const age = 30; console.log(`Hello, my name is ${name} and I am ${age} years old.`);  `` |
+
+#### Embedding Expressions
+
+The placeholder $\texttt{\$\{}$ $\texttt{\}}$ can contain **any valid JavaScript expression**, not just simple variables.
+
+```javascript
+const price = 10;
+const quantity = 3;
+
+// Embedding an arithmetic expression
+const message = `Total: $${price * quantity}`;
+console.log(message); // Output: Total: $30
+
+// Embedding a function call or ternary operator
+const age = 25;
+const isAdult = age >= 18 ? 'an adult' : 'a minor';
+console.log(`The user is ${isAdult}.`); 
+```
+
+### 2\. Multi-line Strings 📝
+
+Template literals automatically respect line breaks inserted into the code, making it easy to create multi-line strings without using the escape sequence `\n`.
+
+#### Code Example
+
+| Traditional String (Requires `\n`) | Template Literal (Natural Line Breaks) |
+| :--- | :--- |
+| ` javascript const text = "Line 1\nLine 2\nLine 3"; console.log(text);  ` | `` javascript const text = `Line 1 Line 2 Line 3`; console.log(text);  `` |
+
+### 3\. Nesting Template Literals 🥚
+
+Template literals can be nested inside their own expression placeholders, useful for generating dynamic HTML or complex strings.
+
+```javascript
+const items = ['Apple', 'Banana'];
+const html = `<ul> ${items.map(item => `<li>${item}</li>`).join('')} </ul>`;
+console.log(html); 
+// Output: <ul> <li>Apple</li><li>Banana</li> </ul>
+```
+
+---
+
+### 💡 Summary / Key Takeaways
+
+| Key Concept | Description |
+| :--- | :--- |
+| **Delimiter** | Uses the **backtick** (`` ` ``) character. |
+| **Interpolation** | Variables and expressions are embedded using the **placeholder** $\texttt{\$\{expression\}}$ |
+| **Multi-line** | Supports multi-line strings without needing the `\n` escape sequence. |
+| **Best Practice** | Use template literals as the default way to construct strings in modern JavaScript. |
+
+---
+
+### 🔗 References
+
+* **MDN Web Docs:** [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+* **javascript.info:** [Template literals](https://www.google.com/search?q=https://javascript.info/string-methods%23backticks)
+
+---
+
+- [ ] Master **destructuring** for arrays and objects.
+- [ ] Understand and use the **spread/rest** operators.
+- [ ] Learn to use **Modules** with the **`import`** and **`export`** syntax.
+- [ ] Differentiate between **default vs named exports**.
