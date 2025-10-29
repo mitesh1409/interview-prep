@@ -41,9 +41,10 @@
 ## Backlog
 
 - [ ] Lexical Scope (merge with #7 above)
-- tagged templates (merge with #15 above)
+- [ ] Lexical Environment
+- [ ] tagged templates (merge with #15 above)
 - [ ] Functions as first class citizens in JavaScript
-- [ ] Function expression, Function statement
+- [ ] Function expression, Function statement, Function Declaration
 - [ ] Higher order functions
 - [ ] Pure functions
 - [ ] IIFE
@@ -53,6 +54,9 @@
 - Classes (Take it from Learn Angular book)
 - Modules
 - https://nodejs.org/en/learn/getting-started/how-much-javascript-do-you-need-to-know-to-use-nodejs
+- Currying
+- Memoization
+- Custom Hooks
 
 ---
 
