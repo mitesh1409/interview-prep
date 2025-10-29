@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 Advanced JavaScript Concepts
+## 🚀 JavaScript Advanced Concepts
 
 - [X] Learn the differences and proper use of **`let`** and **`const`**.
 - [ ] Understand and implement **arrow functions**.
@@ -50,7 +50,8 @@
 - [ ] Memory Leaks
 - Optional chaining
 - Nullish coalescing
-- Classes
+- Classes (Take it from Learn Angular book)
+- Modules
 - https://nodejs.org/en/learn/getting-started/how-much-javascript-do-you-need-to-know-to-use-nodejs
 
 ---
