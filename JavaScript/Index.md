@@ -9,7 +9,7 @@
 5. [Task/Callback/Message Queue](./Q-5.md)
 6. [Microtasks vs Macrotasks](./Q-6.md)
 7. [Hoisting](./Q-7.md)
-8. [Scopes - Block Scope, Function Scope, Global Scope, Lexical Scope, Scope Chain](./Q-8.md)
+8. [Scopes - Global Scope, Function Scope, Block Scope, Lexical Scope, Scope Chain](./Q-8.md)
 
 Next
 7 + 29
