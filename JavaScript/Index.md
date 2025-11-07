@@ -9,6 +9,8 @@
 5. [Task/Callback/Message Queue](./Q-5.md)
 6. [Microtasks vs Macrotasks](./Q-6.md)
 7. [Hoisting](./Q-7.md)
+8. [Scopes - Block Scope, Function Scope, Global Scope, Lexical Scope, Scope Chain](./Q-8.md)
+
 Next
 7 + 29
 15 + 31
@@ -29,7 +31,7 @@ X 3. Learn about the **Event Loop** and its role in handling asynchronous operat
 X 4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
 X 5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
 X 6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
-7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
+X 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
 8. Practice and understand **Closures** and their utility.
 9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
 10. Learn the different rules for **`this` binding** (default, implicit, explicit, new).
@@ -61,7 +63,7 @@ X 6. Master the concept of **Hoisting** for variables and functions, how Hoistin
 
 ## Backlog
 
-29. Lexical Scope (merge with #7)
+X 29. Lexical Scope (merge with #7)
 X 30. Lexical Environment (merged with #1)
 31. tagged templates (merge with #15 above)
 32. Functions as first class citizens in JavaScript
@@ -187,155 +189,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
-## #7 Study **Scope** in detail: **Block Scope**, **Function Scope**, **Global Scope** and **Scope Chain**.
-
-### Scope
-
-**Scope** in JavaScript determines the accessibility of variables, functions, and objects in different parts of your code. It's the set of rules that governs where and how a variable can be looked up.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | The current context of execution, defining which variables and expressions are "visible" and accessible at a given point in the code. |
-| **Why use it?** | **Security:** Variables defined inside a scope (e.g., a function) are protected from external access, preventing naming collisions and bugs. **Memory Management:** Variables can be garbage collected when they fall out of scope. |
-| **How does it work?** | The JavaScript engine creates a **Lexical Environment** for each scope, establishing a hierarchical **Scope Chain** that determines lookup rules. |
-
----
-
-### The Three Types of Scope
-
-#### 1\. Global Scope 🌐
-
-**What:** The outermost scope, accessible from anywhere in the JavaScript program. Variables declared outside of any function or block live here.
-
-**Implication:**
-
-* In a browser environment, the Global Scope is associated with the **`window`** object.
-* Variables declared with `var` in the Global Scope become properties of the Global Object.
-* It's best practice to minimize the use of Global Scope to prevent naming conflicts and memory clutter.
-
-**Code Example:**
-
-```javascript
-// Global Scope
-const globalMessage = "Hello World"; // Available everywhere
-
-function checkGlobal() {
-    console.log(globalMessage); // Accessing the global variable
-}
-
-console.log(globalMessage); // Output: Hello World
-checkGlobal();              // Output: Hello World
-```
-
----
-
-#### 2\. Function Scope (Local Scope) 🧱
-
-**What:** Variables declared inside a function are only accessible within that function and any nested functions inside it.
-
-**Implication:**
-
-* This is the traditional form of local scope in pre-ES6 JavaScript, primarily associated with the **`var`** keyword.
-* Function scope provides data privacy; variables inside a function are invisible to the outside world.
-
-**Code Example:**
-
-```javascript
-function calculateSum(a, b) {
-    // Function Scope for `result` and `message`
-    var result = a + b; 
-    let message = "The sum is: ";
-    console.log(message + result); // Accessible here
-}
-
-calculateSum(5, 10);
-// console.log(result); // ReferenceError: result is not defined (outside of function scope)
-```
-
----
-
-#### 3\. Block Scope (ES6+) 📦
-
-**What:** Variables declared with **`let`** and **`const`** inside a pair of curly braces (`{}`)—such as in `if` statements, `for` loops, or just standalone blocks—are confined to that block.
-
-**Implication:**
-
-* This solved many of the issues caused by `var` leaking out of blocks (like `for` loops).
-* `let` and `const` enable true block-level scoping, making code cleaner and more predictable.
-
-**Code Example:**
-
-```javascript
-if (true) {
-    // Block Scope for `x` and `y`
-    let x = 10; 
-    const y = 20; 
-    var z = 30; // 'var' is NOT block-scoped! It leaks out.
-    console.log(x); // Output: 10
-}
-
-// console.log(x); // ReferenceError: x is not defined (outside of block scope)
-
-console.log(z); // Output: 30 (DANGER: var ignores block scope)
-```
-
-### The Scope Chain (The Lookup Mechanism)
-
-The **Scope Chain** is the hierarchy of scopes that the JavaScript engine uses to look up variables.
-
-* When the engine needs to resolve a variable, it starts by checking the **current scope**.
-* If the variable is not found there, it moves up to the **immediate parent scope**.
-* This process continues layer by layer until it reaches the **Global Scope**.
-* If the variable is still not found in the Global Scope, a **`ReferenceError`** is thrown (unless running in non-strict mode where it might implicitly create a global variable).
-
-**Code Example (Scope Chain):**
-
-```javascript
-const app = 'MyApp'; // Global Scope
-
-function outerFunction() {
-    const outerVar = 'Outer'; // Scope 1: Function Scope of outerFunction
-
-    function innerFunction() {
-        const innerVar = 'Inner'; // Scope 2: Function Scope of innerFunction
-        
-        // Lookup `app`: Checks Scope 2 -> Checks Scope 1 -> Finds in Global Scope
-        console.log(app); 
-        
-        // Lookup `outerVar`: Checks Scope 2 -> Finds in Scope 1
-        console.log(outerVar);
-        
-        // Lookup `innerVar`: Finds in Scope 2
-        console.log(innerVar);
-    }
-    innerFunction();
-}
-outerFunction();
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Scope Definition** | The region of the code where a variable is accessible. |
-| **`var`** | Is **Function-scoped** or **Global-scoped**. **Ignores** Block scope (`if`, `for` loops), leading to leakage. |
-| **`let` and `const`** | Are **Block-scoped**. Recommended for most variable declarations as they contain variables safely within the nearest `{}` block. |
-| **Scope Chain** | The hierarchical path the JS engine follows to look up a variable, moving outward from the current scope to the Global Scope. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Scope - JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-* **javascript.info:** [Variable Scope, Closure](https://www.google.com/search?q=https://javascript.info/var-let-const%23scope-summary)
-* **YouTube Video:** Search for "JavaScript Scope and Scope Chain" for visual diagrams.
-
----
 
 ## #8 Practice and understand **Closures** and their utility.
 
