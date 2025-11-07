@@ -8,7 +8,7 @@
 4. [Event Loop](./Q-4.md)
 5. [Task/Callback/Message Queue](./Q-5.md)
 6. [Microtasks vs Macrotasks](./Q-6.md)
-7. [Hoisting]()
+7. [Hoisting](./Q-7.md)
 
 ## Intermediate
 
