@@ -9,6 +9,11 @@
 5. [Task/Callback/Message Queue](./Q-5.md)
 6. [Microtasks vs Macrotasks](./Q-6.md)
 7. [Hoisting](./Q-7.md)
+Next
+7 + 29
+15 + 31
+13
+10
 
 ## Intermediate
 
