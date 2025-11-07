@@ -1,66 +1,76 @@
-# JavaScript Interview Questions & Answers
+# JavaScript Interview Questions Index
+
+## Basic
+
+1. [Execution Context](./Q-1.md)
+2. [Lexical Environment](./Q-2.md)
+
+## Intermediate
+
+## Advanced
+
+---
 
 ## 📝 JavaScript Core Concepts
 
-- [X] Study and understand the **Execution Context** in JavaScript.
-- [X] Research the **Call Stack** and how it manages function calls.
-- [X] Learn about the **Event Loop** and its role in handling asynchronous operations.
-- [X] Understand the purpose and function of the **Task Queue** (or Callback Queue).
-- [X] Compare and contrast **Microtasks vs Macrotasks** and their priority.
-- [X] Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
-- [X] Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
-- [X] Practice and understand **Closures** and their utility.
-- [X] Grasp the concepts of **Prototype** and the **Prototype Chain**.
-- [X] Learn the different rules for **`this` binding** (default, implicit, explicit, new).
-- [X] Understand the features and implications of using **Strict Mode** (`'use strict'`).
-- [X] Investigate how JavaScript handles **Garbage Collection**.
+X 1. Study and understand the **Execution Context** in JavaScript.
+2. Research the **Call Stack** and how it manages function calls.
+3. Learn about the **Event Loop** and its role in handling asynchronous operations.
+4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
+5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
+6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
+7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
+8. Practice and understand **Closures** and their utility.
+9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
+10. Learn the different rules for **`this` binding** (default, implicit, explicit, new).
+11. Understand the features and implications of using **Strict Mode** (`'use strict'`).
+12. Investigate how JavaScript handles **Garbage Collection**.
 
 ---
 
 ## 🚀 JavaScript Advanced Concepts
 
-- [X] Learn the differences and proper use of **`let`** and **`const`**.
-- [ ] Understand and implement **arrow functions**.
-- [ ] Practice using **template literals** for string interpolation.
-- [ ] Master **destructuring** for arrays and objects.
-- [ ] Understand and use the **spread/rest** operators.
-- [ ] Learn to use **Modules** with the **`import`** and **`export`** syntax.
-- [ ] Differentiate between **default vs named exports**.
-- [ ] Study asynchronous patterns using **callbacks**.
-- [ ] Master **promises** for handling asynchronous operations.
-- [ ] Implement and understand **`async`/`await`** for cleaner asynchronous code.
-- [ ] Learn basic **error handling** with **`try`/`catch`** blocks.
-- [ ] Study how to create and use **custom errors**.
-- [ ] Understand the difference between **Deep vs Shallow Copy**.
-- [ ] Explore the concept of **Immutability** in JavaScript.
-- [ ] Learn to use **`Object.assign`** for shallow copying and merging objects.
-- [ ] Understand when to use **`structuredClone`** for deep copying.
+13. Learn the differences and proper use of **`let`** and **`const`**.
+14. Understand and implement **arrow functions**.
+15. Practice using **template literals** for string interpolation.
+16. Master **destructuring** for arrays and objects.
+17. Understand and use the **spread/rest** operators.
+18. Learn to use **Modules** with the **`import`** and **`export`** syntax.
+19. Differentiate between **default vs named exports**.
+20. Study asynchronous patterns using **callbacks**.
+21. Master **promises** for handling asynchronous operations.
+22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
+23. Learn basic **error handling** with **`try`/`catch`** blocks.
+24. Study how to create and use **custom errors**.
+25. Understand the difference between **Deep vs Shallow Copy**.
+26. Explore the concept of **Immutability** in JavaScript.
+27. Learn to use **`Object.assign`** for shallow copying and merging objects.
+28. Understand when to use **`structuredClone`** for deep copying.
 
 ---
 
 ## Backlog
 
-- [ ] Lexical Scope (merge with #7 above)
-- [ ] Lexical Environment
-- [ ] tagged templates (merge with #15 above)
-- [ ] Functions as first class citizens in JavaScript
-- [ ] Function expression, Function statement, Function Declaration
-- [ ] Higher order functions
-- [ ] Pure functions
-- [ ] IIFE
-- [ ] Memory Leaks
-- Optional chaining
-- Nullish coalescing
-- Classes (Take it from Learn Angular book)
-- Modules
-- https://nodejs.org/en/learn/getting-started/how-much-javascript-do-you-need-to-know-to-use-nodejs
-- Currying
-- Memoization
-- Custom Hooks
-- Master **destructuring** for arrays and objects.
-- Understand and use the **spread/rest** operators.
-- Learn to use **Modules** with the **`import`** and **`export`** syntax.
-- Differentiate between **default vs named exports**.
+29. Lexical Scope (merge with #7)
+X 30. Lexical Environment (merged with #1)
+31. tagged templates (merge with #15 above)
+32. Functions as first class citizens in JavaScript
+33. Function expression, Function statement, Function Declaration
+34. Higher order functions
+35. Pure functions
+36. IIFE
+37. Memory Leaks
+38. Optional chaining
+39. Nullish coalescing
+40. Classes (Take it from Learn Angular book)
+41. Modules
+42. Currying
+43. Memoization
+44. Custom Hooks
+45. Master **destructuring** for arrays and objects.
+46. Understand and use the **spread/rest** operators.
+47. Learn to use **Modules** with the **`import`** and **`export`** syntax.
+48. Differentiate between **default vs named exports**.
 
 
 #### Object Destructuring
@@ -167,120 +177,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
----
-
-## #1 Study and understand the **Execution Context** in JavaScript.
-
-### Execution Context
-
-The **Execution Context (EC)** is the abstract concept of an environment where JavaScript code is evaluated and executed. It is the core mechanism that the JavaScript engine uses to manage code execution.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A data structure created by the JavaScript engine to manage the execution of a function, a script, or a module. It defines the environment for the running code. |
-| **Why use it?** | To manage **variable storage**, determine the value of the **`this`** keyword, track the **scope chain**, and provide a controlled, isolated environment for code execution. |
-| **How does it work?** | When the engine starts executing code, it pushes a new EC onto the **Call Stack**. This EC is created in two phases: **Creation** and **Execution**. |
-
-### Types of Execution Context
-
-There are three main types of Execution Contexts:
-
-1. **Global Execution Context (GEC):** The default context created when the script file first loads. There is only **one** GEC per application. It creates the global object (`window` in browsers, `global` in Node.js) and sets `this` to point to that global object.
-2. **Function Execution Context (FEC):** A new context is created every time a function is called. There can be numerous FECs.
-3. **Eval Execution Context:** A context created for code executed inside the `eval()` function (used less frequently).
-
----
-
-### The Two Phases of Context Creation
-
-When an Execution Context is created (either GEC or FEC), it goes through two distinct phases:
-
-#### Phase 1: Creation Phase (Memory Allocation)
-
-In this phase, the engine scans the code *before* execution starts, setting up the necessary components. This is where **Hoisting** occurs.
-
-The EC object is structurally created with three components:
-
-1. **Variable Environment (VE):**
-      * Scans the code for **`var`** declarations and **function declarations**.
-      * For `var` variables, it allocates memory and initializes them to **`undefined`**.
-      * For function declarations, it stores the entire function in memory.
-      * It also handles **`let`** and **`const`** declarations, but places them in a separate lexical environment and does *not* initialize them (they remain in the **Temporal Dead Zone**).
-2. **Lexical Environment (LE):**
-      * Conceptually similar to the VE, but stores `let` and `const` bindings.
-      * It also contains the **Scope Chain**, which is the list of parent scopes the current context can access.
-3. **`this` Binding:**
-      * Determines the value of the `this` keyword (based on the four rules: Default, Implicit, Explicit, New).
-      * For the GEC, `this` is bound to the Global Object.
-      * For an FEC, `this` is determined by the call site.
-
-#### Phase 2: Execution Phase (Code Running)
-
-In this phase, the engine executes the code line by line.
-
-  * It assigns the actual values to the variables.
-  * It executes the function calls.
-  * If a function is called, a **new Function Execution Context** is created and pushed onto the **Call Stack**.
-
----
-
-### The Relationship with the Call Stack
-
-The **Call Stack** is a crucial mechanism that manages the Execution Contexts.
-
-  * It's a **LIFO (Last-In, First-Out)** data structure.
-  * When a script starts, the **Global EC** is pushed onto the stack.
-  * Whenever a function is called, a **Function EC** is created and pushed onto the top of the stack.
-  * When a function finishes executing, its **Function EC** is popped off the stack, and control returns to the context below it.
-  * The script finishes when the **Global EC** is popped off the stack.
-
-#### Code Example
-
-```javascript
-let a = 10; // GEC scope
-
-function first() { // FEC 1
-    let b = 20;
-    second();
-    console.log('Finished first');
-}
-
-function second() { // FEC 2
-    let c = 30;
-    console.log('Executing second');
-}
-
-first(); 
-// Call Stack Sequence:
-// 1. Script loads: [ GEC ]
-// 2. first() called: [ GEC, FEC 1 ]
-// 3. second() called: [ GEC, FEC 1, FEC 2 ]
-// 4. second() finishes: [ GEC, FEC 1 ] <-- FEC 2 is popped
-// 5. first() finishes: [ GEC ] <-- FEC 1 is popped
-// 6. Script finishes: [ ] <-- GEC is popped
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Core Function** | The EC is the **runtime environment** that hosts the code currently being executed. |
-| **Two Phases** | **1. Creation:** Allocates memory (Variable Environment, Lexical Environment, `this` binding). **2. Execution:** Runs code line by line, assigning values. |
-| **Components** | Key components are **Variable Environment** (`var`, function decls), **Lexical Environment** (`let`, `const`, Scope Chain), and **`this` Binding**. |
-| **Stack Management** | The **Call Stack** manages the Execution Contexts in a LIFO order (Global EC at the bottom, current function EC at the top). |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Scope and Context in JavaScript](https://www.google.com/search?q=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var%23variable_hoisting) (Related to Execution Context structure)
-* **javascript.info:** [Execution context, Scope chain](https://www.google.com/search?q=https://javascript.info/function-object%23execution-context-scope-chain) (Good conceptual overview)
-* **YouTube Video:** Search for "JavaScript Execution Context and Call Stack" for visual diagrams.
 
 ---
 
