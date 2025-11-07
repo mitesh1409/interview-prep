@@ -6,6 +6,7 @@
 2. [Lexical Environment](./Q-2.md)
 3. [Call Stack](./Q-3.md)
 4. [Event Loop](./Q-4.md)
+5. [Task/Callback/Message Queue](./Q-5.md)
 
 ## Intermediate
 
@@ -17,9 +18,9 @@
 
 X 1. Study and understand the **Execution Context** in JavaScript.
 X 2. Research the **Call Stack** and how it manages function calls.
-3. Learn about the **Event Loop** and its role in handling asynchronous operations.
-4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
-5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
+X 3. Learn about the **Event Loop** and its role in handling asynchronous operations.
+X 4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
+X 5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
 6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
 8. Practice and understand **Closures** and their utility.
@@ -179,97 +180,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
----
-
-## #4 Understand the purpose and function of the **Task Queue** (or Callback Queue).
-
-### The Task Queue (Callback Queue)
-
-The **Task Queue** (also frequently called the **Callback Queue** or **Message Queue**) is a crucial part of the JavaScript runtime environment. Its main purpose is to hold asynchronous callback functions that are ready to be executed, ensuring they wait their turn until the synchronous code completes.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A queue (FIFO structure) that stores **asynchronous callback functions** that have finished their background processing (via Web APIs) and are ready to be pushed to the Call Stack for execution. |
-| **Why use it?** | It acts as a **holding area** to prevent asynchronous callbacks from interrupting the execution of synchronous code, maintaining JavaScript's single-threaded, non-blocking nature. |
-| **How does it work?** | The **Event Loop** constantly monitors the Call Stack and the Task Queue. When the Call Stack is empty, the Event Loop takes the **first** callback from the Task Queue and pushes it onto the stack. |
-
-### Key Characteristics and Function
-
-#### 1\. FIFO Structure (First-In, First-Out) ➡️
-
-The Task Queue is a standard queue, meaning the callbacks are processed in the order they were added. The first callback to enter the queue is the first one to be executed once the Call Stack is clear.
-
-#### 2\. Macrotasks vs. Microtasks (Crucial Distinction) ⚖️
-
-While the term "Task Queue" often refers to **Macrotasks**, it's vital to know that the JavaScript concurrency model uses two queues with different priorities:
-
-* **Macrotasks (Tasks):** Handled by the **Task Queue**. These include I/O operations, UI rendering, timers (`setTimeout`, `setInterval`), and `postMessage`.
-* **Microtasks:** Handled by the **Microtask Queue** (a separate, higher-priority queue). These include Promises (`.then()`, `.catch()`, `.finally()`) and `queueMicrotask()`.
-
-The **Microtask Queue is always processed entirely before the Event Loop moves to the Macrotask Queue (Task Queue).**
-
-#### 3\. The Role in Non-Blocking I/O ⏳
-
-When you initiate an asynchronous operation like an HTTP request (`fetch`) or a timer (`setTimeout`):
-
-1. The operation is delegated to a **Web API** (or Node API) to run in the background.
-2. Once the Web API completes the task, the associated callback function is moved to the **Task Queue** (or Microtask Queue, if it's a Promise).
-3. The callback waits in the queue until the Call Stack is empty. This prevents the request from blocking the main thread while it's waiting for data.
-
-### Code Example Highlighting the Queue
-
-This example shows how `setTimeout` callbacks line up in the Task Queue, waiting for their turn.
-
-```javascript
-console.log(1); // Sync
-
-setTimeout(() => {
-    console.log(3); // Macrotask A
-}, 1000); // Enters queue after 1000ms, then waits for stack
-
-setTimeout(() => {
-    console.log(4); // Macrotask B
-}, 0); // Enters queue immediately (time is 0), but still waits for stack
-
-console.log(2); // Sync
-
-// Call Stack Sequence:
-// 1. Logs 1.
-// 2. setTimeout(A) is passed to Web API.
-// 3. setTimeout(B) is passed to Web API.
-// 4. Logs 2.
-// 5. Call Stack is EMPTY.
-// 6. Web API for (B) finishes, callback (4) moves to Task Queue: [ callbackB(4) ]
-// 7. Event Loop pushes callback (4) to Stack. Logs 4. Stack is empty.
-// 8. After 1000ms, Web API for (A) finishes, callback (3) moves to Task Queue: [ callbackA(3) ]
-// 9. Event Loop pushes callback (3) to Stack. Logs 3. Stack is empty.
-
-// Output: 1, 2, 4, 3 (The 0ms timer still runs after the sync code)
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Data Structure** | A queue (FIFO) that holds **ready-to-run** asynchronous callbacks. |
-| **Mechanism** | Where Macrotask callbacks (like timers and I/O) wait after their background process is complete. |
-| **Activation** | Callbacks are only executed when the **Event Loop** verifies that the **Call Stack is empty**. |
-| **Priority Note** | This queue holds **Macrotasks**, which have **lower priority** than **Microtasks** (Promises), which are processed first. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop) (Contains the definitive diagram and explanation).
-* **javascript.info:** [Event Loop](https://javascript.info/event-loop) (Explains Task Queue vs. Microtask Queue).
-* **Video:** The Philip Roberts video (mentioned previously) is the best visual aid for this component.
-
----
 
 ## #5 Compare and contrast **Microtasks vs Macrotasks** and their priority.
 
@@ -1524,5 +1434,3 @@ console.log(html);
 
 * **MDN Web Docs:** [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 * **javascript.info:** [Template literals](https://www.google.com/search?q=https://javascript.info/string-methods%23backticks)
-
----
