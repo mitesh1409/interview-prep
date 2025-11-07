@@ -4,6 +4,7 @@
 
 1. [Execution Context](./Q-1.md)
 2. [Lexical Environment](./Q-2.md)
+3. [Call Stack](./Q-3.md)
 
 ## Intermediate
 
@@ -14,7 +15,7 @@
 ## 📝 JavaScript Core Concepts
 
 X 1. Study and understand the **Execution Context** in JavaScript.
-2. Research the **Call Stack** and how it manages function calls.
+X 2. Research the **Call Stack** and how it manages function calls.
 3. Learn about the **Event Loop** and its role in handling asynchronous operations.
 4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
 5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
@@ -177,108 +178,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
----
-
-## #2 Research the **Call Stack** and how it manages function calls.
-
-The **Call Stack** is the manager of the Execution Contexts.
-
-### The Call Stack
-
-The **Call Stack** is a vital part of the JavaScript runtime environment. It's an internal mechanism used by the JavaScript engine to keep track of function calls, manage the order of execution, and determine where the program should return to once a function completes.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A **LIFO (Last-In, First-Out)** data structure that manages the sequence of **Execution Contexts** created during the execution of a script. |
-| **Why use it?** | To track the current running function, where it was called from, and which function should be executed next. It prevents the program from getting lost in nested function calls. |
-| **How does it work?** | When a function is called, its Execution Context is **pushed** onto the stack. When the function returns, its context is **popped** off the stack. |
-
-### Key Mechanics of the Call Stack
-
-#### 1\. LIFO Principle (Last-In, First-Out) 🔄
-
-The Call Stack follows the LIFO principle, much like a stack of plates:
-
-* **Push:** When a function is called, its corresponding Execution Context is placed on top of the stack.
-* **Pop:** When a function returns or finishes executing, its Execution Context is removed from the top of the stack.
-
-The engine always executes the function whose context is currently at the **top** of the stack.
-
-#### 2\. Managing Function Calls 📞
-
-1. **Start:** The **Global Execution Context (GEC)** is the first item pushed onto the stack when the script starts.
-2. **Calling a function:** A new **Function Execution Context (FEC)** is created and pushed onto the top of the stack.
-3. **Nested calls:** If that function calls another function, a new FEC is pushed on top of the first one.
-4. **Returning:** Once a function's code finishes, its FEC is popped off the stack, and the engine resumes execution in the context immediately below it.
-
-#### 3\. Stack Overflow 💥
-
-A **Stack Overflow** error occurs when the Call Stack reaches its maximum capacity. This typically happens due to:
-
-* **Infinite Recursion:** A function that calls itself without a proper base (exit) case, causing the engine to continuously push new Execution Contexts onto the stack until it runs out of memory.
-
-**Code Example (Stack Overflow):**
-
-```javascript
-function recurse() {
-    // There is no exit condition!
-    recurse(); 
-}
-
-// Calling this function will lead to:
-// [ GEC, FEC:recurse, FEC:recurse, FEC:recurse, ... ] 
-// until the stack is full.
-// recurse(); // Uncommenting this would cause the error
-```
-
-### Code Example of Call Stack Flow
-
-```javascript
-function b() {
-    console.log('Function B is running');
-    // Function B finishes and is popped off the stack
-}
-
-function a() {
-    console.log('Function A is running');
-    b(); // B's EC is pushed onto the stack
-    console.log('Function A is done');
-    // Function A finishes and is popped off the stack
-}
-
-a(); // A's EC is pushed onto the stack
-// GEC remains until the entire script finishes
-
-// Call Stack Visualization:
-// 1. Initial: [ GEC ]
-// 2. a() called: [ GEC, a-FEC ]
-// 3. b() called: [ GEC, a-FEC, b-FEC ]
-// 4. b() returns/finishes: [ GEC, a-FEC ] (b-FEC popped)
-// 5. a() returns/finishes: [ GEC ] (a-FEC popped)
-// 6. Script ends: [ ] (GEC popped)
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **LIFO Data Structure** | Last-In, First-Out—the last function pushed onto the stack is the first one to be executed and popped off. |
-| **Context Manager** | Manages the order of function Execution Contexts. |
-| **Execution Flow** | The JavaScript engine always executes the function whose context is currently at the **top** of the stack. |
-| **Stack Overflow** | An error caused by too many contexts being pushed onto the stack (e.g., infinite recursion), exceeding the stack's limited memory size. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop) (The Call Stack is the first component explained here).
-* **javascript.info:** [Execution context, Scope chain](https://www.google.com/search?q=https://javascript.info/function-object%23execution-context-scope-chain) (Includes a discussion of the stack).
-* **YouTube Video:** Search for "JavaScript Call Stack" for visual representations of pushing and popping contexts.
 
 ---
 
