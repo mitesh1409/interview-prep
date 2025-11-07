@@ -7,6 +7,7 @@
 3. [Call Stack](./Q-3.md)
 4. [Event Loop](./Q-4.md)
 5. [Task/Callback/Message Queue](./Q-5.md)
+6. [Microtasks vs Macrotasks](./Q-6.md)
 
 ## Intermediate
 
@@ -180,85 +181,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
-## #5 Compare and contrast **Microtasks vs Macrotasks** and their priority.
-
-### Microtasks vs. Macrotasks
-
-JavaScript's asynchronous concurrency model uses two different types of task queues to prioritize execution, ensuring that time-sensitive operations (like promise resolution) run quickly and don't get delayed by longer tasks (like timers or rendering).
-
-### Comparison and Contrast
-
-| Feature | Macrotasks (Tasks) | Microtasks |
-| :--- | :--- | :--- |
-| **Primary Examples** | **Timers** (`setTimeout`, `setInterval`), **I/O**, **UI Rendering**, `postMessage`. | **Promises** (`.then()`, `.catch()`, `.finally()`), `queueMicrotask()`, **MutationObserver**. |
-| **Associated Queue** | **Task Queue** (or Callback Queue) | **Microtask Queue** (a separate, higher-priority queue) |
-| **Execution Timing** | Only one Macrotask is processed per **Event Loop cycle**. UI rendering and I/O may happen between Macrotasks. | **All** Microtasks are processed in one go, *after* the current function completes and *before* the next Macrotask begins. |
-| **Priority** | **Lower Priority** | **Higher Priority** |
-
-### Priority and Event Loop Flow 🔄
-
-The crucial difference lies in **priority**. The Event Loop strictly follows this processing order:
-
-1. **Run Synchronous Code:** The code on the **Call Stack** executes until it's empty.
-2. **Process Microtasks:** The Event Loop checks the **Microtask Queue**. If it's not empty, **ALL** microtasks are executed, one after the other, until the Microtask Queue is completely empty.
-    * *(Crucially, a new microtask added during this process will also be executed before moving on).*
-3. **Perform Rendering (Browser only):** The browser may choose to update the UI/render changes.
-4. **Process Macrotask:** The Event Loop checks the **Task Queue** (Macrotask Queue) and takes **only one** Macrotask to push onto the Call Stack.
-5. **Repeat:** The cycle starts again from Step 1.
-
-**Key Takeaway:** The entire **Microtask Queue** is emptied *before* the Event Loop moves to the next **Macrotask**.
-
-### Code Example Illustrating Priority
-
-This classic example shows how a zero-delay `setTimeout` (Macrotask) is delayed by a Promise (Microtask).
-
-```javascript
-console.log(1); // Synchronous
-
-setTimeout(() => {
-    console.log(4); // Macrotask (waits in Task Queue)
-}, 0);
-
-Promise.resolve()
-    .then(() => {
-        console.log(3); // Microtask (waits in Microtask Queue)
-    });
-
-console.log(2); // Synchronous
-
-// Execution Flow:
-// 1. Logs 1.
-// 2. setTimeout callback is sent to the Web API, then moved to the **Task Queue**.
-// 3. Promise.resolve() is called. The .then() callback (3) is moved to the **Microtask Queue**.
-// 4. Logs 2.
-// 5. Call Stack is EMPTY.
-// 6. Event Loop checks Microtasks. It finds (3), executes it, and logs 3.
-// 7. Microtask Queue is EMPTY.
-// 8. Event Loop checks Macrotasks. It finds (4), executes it, and logs 4.
-
-// Guaranteed Output: 1, 2, 3, 4
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Microtasks** | High-priority tasks (e.g., Promises). The entire queue is emptied *before* proceeding to the Macrotasks or rendering. |
-| **Macrotasks** | Lower-priority tasks (e.g., Timers, I/O, UI). Only **one** Macrotask is pulled from its queue per full Event Loop cycle. |
-| **Order of Flow** | **Sync Code** $\rightarrow$ **Microtasks (All)** $\rightarrow$ **Render** $\rightarrow$ **Macrotask (One)** $\rightarrow$ **Repeat** |
-| **Implication** | Microtasks provide a guarantee of faster execution for operations like promise handling, ensuring data consistency before the next full task or render cycle. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Microtask queue](https://www.google.com/search?q=https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_queue)
-* **javascript.info:** [Microtasks and Macrotasks](https://www.google.com/search?q=https://javascript.info/microtasks-macrotasks)
-
----
 
 ## #6 Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
 
