@@ -670,6 +670,8 @@ function i18n(strings, ...values) {
 
 ## Backlog
 
+<script type="module" ?
+
 1️⃣ Closures – Functions that remember the scope they were created in
 2️⃣ Hoisting – Declarations are lifted, initializations are not
 3️⃣ Event Loop – JS is single-threaded but non-blocking, thanks to callbacks
