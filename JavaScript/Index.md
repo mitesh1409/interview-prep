@@ -8,6 +8,7 @@
 4. [Event Loop](./Q-4.md)
 5. [Task/Callback/Message Queue](./Q-5.md)
 6. [Microtasks vs Macrotasks](./Q-6.md)
+7. [Hoisting]()
 
 ## Intermediate
 
@@ -22,7 +23,7 @@ X 2. Research the **Call Stack** and how it manages function calls.
 X 3. Learn about the **Event Loop** and its role in handling asynchronous operations.
 X 4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
 X 5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
-6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
+X 6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
 8. Practice and understand **Closures** and their utility.
 9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
@@ -181,135 +182,6 @@ const [first, second, ...rest] = items;
 console.log(first);  // Output: apple
 console.log(rest);   // Output: ['cherry', 'date']
 ```
-
-## #6 Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
-
-hoist = to lift or pull something up, often by using ropes, etc.
-
-### Hoisting
-
-**Hoisting** is JavaScript's default behavior of moving declarations to the top of the current scope (either global or function scope) during the **Creation Phase** of the Execution Context, *before* code execution begins.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A conceptual mechanism where variable and function declarations are processed and put into memory at the beginning of their containing scope. |
-| **Why does it happen?** | It's a fundamental part of how the **JavaScript Execution Context** is built. The engine first sets up the memory (Creation Phase) and then runs the code (Execution Phase). |
-| **How does it work?** | Only the **declaration** is hoisted, not the **assignment** (initialization). This separation between declaration and assignment is why you can use a variable before you declare it (though it's bad practice). |
-
----
-
-### Hoisting for Functions vs. Variables
-
-| Type | What is Hoisted? | Initial Value | Implication |
-| :--- | :--- | :--- | :--- |
-| **Function Declarations** | The **entire function** (name and body). | The function body itself. | You can call a function declaration **before** it appears in the code. |
-| **`var` Variables** | Only the **declaration**. | `undefined`. | You can access a `var` variable before its line, but its value will be `undefined`. |
-| **`let` / `const` Variables** | Only the **declaration**. | Uninitialized (They enter the **Temporal Dead Zone**). | Accessing them before the declaration throws a `ReferenceError`. |
-
----
-
-### Hoisting: `var` (Full Hoisting of Declaration)
-
-For `var`, the declaration is hoisted to the top of the function or global scope, but the assignment remains in place.
-
-#### Code Example (`var`)
-
-```javascript
-console.log(car); // Output: undefined
-// Why? The declaration `var car;` was hoisted, and its value defaults to 'undefined'.
-
-var car = 'Tesla';
-
-function driving() {
-    console.log(speed); // Output: undefined (Function-scoped var is hoisted to the top of driving FEC)
-    var speed = 80;
-}
-driving();
-
-// What the engine conceptually sees:
-/*
-var car; // Hoisted
-// GEC starts execution...
-console.log(car); 
-car = 'Tesla'; 
-// ...
-*/
-```
-
----
-
-### Hoisting: `let` and `const` (The Temporal Dead Zone)
-
-`let` and `const` declarations are also hoisted, but they are handled differently by the Lexical Environment. They are not initialized and are said to be in the **Temporal Dead Zone (TDZ)** from the start of the scope until the actual declaration is executed.
-
-Attempting to access a `let` or `const` variable within the TDZ results in a **`ReferenceError`**—not `undefined`.
-
-#### Code Example (`let` and `const`)
-
-```javascript
-// console.log(bike); // ReferenceError: Cannot access 'bike' before initialization
-let bike = 'Mountain';
-
-// console.log(price); // ReferenceError: Cannot access 'price' before initialization
-const price = 500;
-
-function mechanics() {
-    let part = 'Wheel';
-    console.log(part); // Output: Wheel
-    // console.log(tool); // ReferenceError: tool is in TDZ
-    let tool = 'Wrench';
-}
-mechanics();
-
-// Key point: TDZ lasts from the start of the scope until the declaration line.
-```
-
----
-
-### Hoisting: Function Declarations (Full Function Hoisting)
-
-Function declarations are entirely hoisted, meaning the function name and its body are available in memory from the start of the scope.
-
-#### Code Example (Function Declarations)
-
-```javascript
-// This works perfectly because the entire function is hoisted.
-hello(); // Output: Hello from a function declaration!
-
-function hello() {
-    console.log('Hello from a function declaration!');
-}
-
-// Function expressions (which are assigned to a variable) only hoist the variable part.
-// greet(); // TypeError: greet is not a function (since 'greet' is hoisted as 'undefined')
-var greet = function() {
-    console.log('Hello from a function expression!');
-};
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Hoisting Rule** | **Declarations** (not assignments) are moved to the top of the scope before execution. |
-| **`var` Hoisting** | Hoisted and initialized with **`undefined`**. Avoids a crash but leads to unpredictable behavior. |
-| **`let`/`const` Hoisting** | Hoisted but **uninitialized** (in the **Temporal Dead Zone / TDZ**). Accessing them throws a `ReferenceError`, promoting safer code. |
-| **Function Hoisting** | **Function declarations** are fully hoisted. **Function expressions** only hoist the variable (`var`) and are initially `undefined`. |
-| **Best Practice** | Always declare variables (`let`/`const`) and functions *before* you use them to avoid relying on Hoisting, which makes code less readable and prone to error. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Hoisting - JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
-* **javascript.info:** [Variable Scopes, Closure](https://www.google.com/search?q=https://javascript.info/var-let-const%23hoisting) (Specifically addresses the difference between `var`, `let`, and `const`).
-* **YouTube Video:** Search for "JavaScript Hoisting explained var let const" for visual aids on TDZ.
-
----
 
 ## #7 Study **Scope** in detail: **Block Scope**, **Function Scope**, **Global Scope** and **Scope Chain**.
 
