@@ -10,10 +10,9 @@
 6. [Microtasks vs Macrotasks](./Q-6.md)
 7. [Hoisting](./Q-7.md)
 8. [Scopes - Global Scope, Function Scope, Block Scope, Lexical Scope, Scope Chain](./Q-8.md)
+9. [Template Literals & Tagged Templates](./Q-9.md)
 
 Next
-7 + 29
-15 + 31
 13
 10
 
@@ -44,7 +43,7 @@ X 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Globa
 
 13. Learn the differences and proper use of **`let`** and **`const`**.
 14. Understand and implement **arrow functions**.
-15. Practice using **template literals** for string interpolation.
+X 15. Practice using **template literals** for string interpolation.
 16. Master **destructuring** for arrays and objects.
 17. Understand and use the **spread/rest** operators.
 18. Learn to use **Modules** with the **`import`** and **`export`** syntax.
@@ -65,7 +64,7 @@ X 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Globa
 
 X 29. Lexical Scope (merge with #7)
 X 30. Lexical Environment (merged with #1)
-31. tagged templates (merge with #15 above)
+X 31. tagged templates (merge with #15 above)
 32. Functions as first class citizens in JavaScript
 33. Function expression, Function statement, Function Declaration
 34. Higher order functions
@@ -1001,88 +1000,3 @@ Arrow functions offer concise syntax, especially for single-expression returns.
 
 * **MDN Web Docs:** [Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * **javascript.info:** [Arrow functions revisited](https://javascript.info/arrow-functions-basics)
-
----
-
-## #15 Practice using **template literals** for string interpolation.
-
-### Template Literals
-
-**Template literals** (or template strings) are a modern way to create strings in JavaScript, offering enhanced features like **string interpolation** and **multi-line strings**. They are defined using the **backtick** (`` ` ``) character, instead of single (``'``) or double (``"``) quotes.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A string literal delimited by **backticks** (`` ` `` `` ` ``) that allows for embedded expressions and multi-line text. |
-| **Why use it?** | **Readability:** Makes dynamic strings with variables much cleaner. **Functionality:** Easily supports multi-line strings and advanced features like tagged templates. |
-| **How to use it?** | Use **backticks** (`` ` `` `` ` ``) to enclose the string, and embed JavaScript expressions inside a **placeholder** using the dollar sign and curly braces: $\texttt{\$\{expression\}}$ |
-
----
-
-### 1\. String Interpolation (The Main Use Case) 💉
-
-**String interpolation** is the process of embedding variables or expressions directly within a string without breaking the string or using the concatenation operator ($\texttt{+}$).
-
-#### Code Example (Comparison)
-
-| Traditional Concatenation (Pre-ES6) | Template Literal Interpolation (ES6+) |
-| :--- | :--- |
-| ` javascript const name = 'Bob'; const age = 30; console.log("Hello, my name is " + name + " and I am " + age + " years old.");  ` | `` javascript const name = 'Bob'; const age = 30; console.log(`Hello, my name is ${name} and I am ${age} years old.`);  `` |
-
-#### Embedding Expressions
-
-The placeholder $\texttt{\$\{}$ $\texttt{\}}$ can contain **any valid JavaScript expression**, not just simple variables.
-
-```javascript
-const price = 10;
-const quantity = 3;
-
-// Embedding an arithmetic expression
-const message = `Total: $${price * quantity}`;
-console.log(message); // Output: Total: $30
-
-// Embedding a function call or ternary operator
-const age = 25;
-const isAdult = age >= 18 ? 'an adult' : 'a minor';
-console.log(`The user is ${isAdult}.`); 
-```
-
-### 2\. Multi-line Strings 📝
-
-Template literals automatically respect line breaks inserted into the code, making it easy to create multi-line strings without using the escape sequence `\n`.
-
-#### Code Example
-
-| Traditional String (Requires `\n`) | Template Literal (Natural Line Breaks) |
-| :--- | :--- |
-| ` javascript const text = "Line 1\nLine 2\nLine 3"; console.log(text);  ` | `` javascript const text = `Line 1 Line 2 Line 3`; console.log(text);  `` |
-
-### 3\. Nesting Template Literals 🥚
-
-Template literals can be nested inside their own expression placeholders, useful for generating dynamic HTML or complex strings.
-
-```javascript
-const items = ['Apple', 'Banana'];
-const html = `<ul> ${items.map(item => `<li>${item}</li>`).join('')} </ul>`;
-console.log(html); 
-// Output: <ul> <li>Apple</li><li>Banana</li> </ul>
-```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Delimiter** | Uses the **backtick** (`` ` ``) character. |
-| **Interpolation** | Variables and expressions are embedded using the **placeholder** $\texttt{\$\{expression\}}$ |
-| **Multi-line** | Supports multi-line strings without needing the `\n` escape sequence. |
-| **Best Practice** | Use template literals as the default way to construct strings in modern JavaScript. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-* **javascript.info:** [Template literals](https://www.google.com/search?q=https://javascript.info/string-methods%23backticks)
