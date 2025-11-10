@@ -16,9 +16,10 @@
 12. [Strict Mode (`'use strict'`)](./Q-12.md)
 13. [Destructuring](./Q-13.md)
 14. [Spread & Rest](./Q-14.md)
+15. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 
 Next  
-18, 19  
+25
 
 ## Intermediate
 
@@ -26,32 +27,15 @@ Next
 
 ---
 
-## 📝 JavaScript Core Concepts
-
-X 1. Study and understand the **Execution Context** in JavaScript.
-X 2. Research the **Call Stack** and how it manages function calls.
-X 3. Learn about the **Event Loop** and its role in handling asynchronous operations.
-X 4. Understand the purpose and function of the **Task Queue** (or Callback Queue).
-X 5. Compare and contrast **Microtasks vs Macrotasks** and their priority.
-X 6. Master the concept of **Hoisting** for variables and functions, how Hoisting works for var, let, const.
-X 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
 8. Practice and understand **Closures** and their utility.
 9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
-X 10. Learn the different rules for **`this` binding** (default, implicit, explicit, new).
-X 11. Understand the features and implications of using **Strict Mode** (`'use strict'`).
 12. Investigate how JavaScript handles **Garbage Collection**.
 
 ---
 
 ## 🚀 JavaScript Advanced Concepts
 
-X 13. Learn the differences and proper use of **`let`** and **`const`**.
 14. Understand and implement **arrow functions**.
-X 15. Practice using **template literals** for string interpolation.
-X 16. Master **destructuring** for arrays and objects.
-X 17. Understand and use the **spread/rest** operators.
-18. Learn to use **Modules** with the **`import`** and **`export`** syntax.
-19. Differentiate between **default vs named exports**.
 20. Study asynchronous patterns using **callbacks**.
 21. Master **promises** for handling asynchronous operations.
 22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
@@ -66,9 +50,6 @@ X 17. Understand and use the **spread/rest** operators.
 
 ## Backlog
 
-X 29. Lexical Scope (merge with #7)
-X 30. Lexical Environment (merged with #1)
-X 31. tagged templates (merge with #15 above)
 32. Functions as first class citizens in JavaScript
 33. Function expression, Function statement, Function Declaration
 34. Higher order functions
@@ -78,7 +59,6 @@ X 31. tagged templates (merge with #15 above)
 38. Optional chaining
 39. Nullish coalescing
 40. Classes (Take it from Learn Angular book)
-41. Modules
 42. Currying
 43. Memoization
 44. Custom Hooks
