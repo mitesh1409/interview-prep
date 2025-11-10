@@ -15,9 +15,9 @@
 11. [`this`](./Q-11.md)
 12. [Strict Mode (`'use strict'`)](./Q-12.md)
 13. [Destructuring](./Q-13.md)
+14. [Spread & Rest](./Q-14.md)
 
-Next
-17  
+Next  
 18, 19  
 
 ## Intermediate
@@ -49,7 +49,7 @@ X 13. Learn the differences and proper use of **`let`** and **`const`**.
 14. Understand and implement **arrow functions**.
 X 15. Practice using **template literals** for string interpolation.
 X 16. Master **destructuring** for arrays and objects.
-17. Understand and use the **spread/rest** operators.
+X 17. Understand and use the **spread/rest** operators.
 18. Learn to use **Modules** with the **`import`** and **`export`** syntax.
 19. Differentiate between **default vs named exports**.
 20. Study asynchronous patterns using **callbacks**.
