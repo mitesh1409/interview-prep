@@ -10,7 +10,6 @@
 22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
 23. Learn basic **error handling** with **`try`/`catch`** blocks.
 24. Study how to create and use **custom errors**.
-25. Understand the difference between **Deep vs Shallow Copy**.
 26. Explore the concept of **Immutability** in JavaScript.
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
