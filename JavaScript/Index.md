@@ -13,9 +13,11 @@
 9. [Template Literals & Tagged Templates](./Q-9.md)
 10. [`var`, `let`, `const`](./Q-10.md)
 11. [`this`](./Q-11.md)
+12. [Strict Mode (`'use strict'`)](./Q-12.md)
 
 Next
-
+16, 17  
+18, 19  
 
 ## Intermediate
 
@@ -34,15 +36,15 @@ X 6. Master the concept of **Hoisting** for variables and functions, how Hoistin
 X 7. Study **Scope** in detail: **Block Scope**, **Function Scope**, and **Global Scope**.
 8. Practice and understand **Closures** and their utility.
 9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
-10. Learn the different rules for **`this` binding** (default, implicit, explicit, new).
-11. Understand the features and implications of using **Strict Mode** (`'use strict'`).
+X 10. Learn the different rules for **`this` binding** (default, implicit, explicit, new).
+X 11. Understand the features and implications of using **Strict Mode** (`'use strict'`).
 12. Investigate how JavaScript handles **Garbage Collection**.
 
 ---
 
 ## 🚀 JavaScript Advanced Concepts
 
-13. Learn the differences and proper use of **`let`** and **`const`**.
+X 13. Learn the differences and proper use of **`let`** and **`const`**.
 14. Understand and implement **arrow functions**.
 X 15. Practice using **template literals** for string interpolation.
 16. Master **destructuring** for arrays and objects.
@@ -79,11 +81,6 @@ X 31. tagged templates (merge with #15 above)
 42. Currying
 43. Memoization
 44. Custom Hooks
-45. Master **destructuring** for arrays and objects.
-46. Understand and use the **spread/rest** operators.
-47. Learn to use **Modules** with the **`import`** and **`export`** syntax.
-48. Differentiate between **default vs named exports**.
-
 
 #### Object Destructuring
 
@@ -443,161 +440,6 @@ The underlying mechanism is still the prototype chain.
 * **MDN Web Docs:** [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 * **javascript.info:** [Prototypal inheritance](https://javascript.info/prototype-inheritance)
 * **YouTube Video:** Search for "JavaScript Prototypes and Prototype Chain" for visual diagrams.
-
----
-
-## #11 Understand the features and implications of using **Strict Mode** (`'use strict'`).
-
-Strict Mode = Modern Mode
-Strict Mode X Sloppy Mode (this is not an official term)
-
-**Strict Mode** is key for writing safer and more reliable JavaScript.
-
-### Strict Mode (`'use strict'`)
-
-**Strict Mode** is a way to opt-in to a restricted version of JavaScript. It was introduced in ECMAScript 5 (ES5) to eliminate silent errors, fix mistakes that make it difficult for JavaScript engines to perform optimizations, and prohibit some syntax likely to be defined in future ES versions.
-
-### What, Why, and How
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A directive (`'use strict';`) that enables a safer, stricter subset of JavaScript by changing how code is executed. |
-| **Why use it?** | **1. Catches common coding mistakes** as exceptions (e.g., trying to use an undeclared variable) instead of failing silently. **2. Fixes mistakes** that made JavaScript language difficult to optimize. **3. Prohibits** confusing and poorly designed "bad parts" of the language. |
-| **How to use it?** | By placing the string literal `'use strict';` at the very beginning of a script or the beginning of a function body. |
-
-### Key Features and Implications (What it Changes)
-
-Strict Mode primarily works by transforming bad practices into explicit errors.
-
-#### 1\. Eliminates Global Variable Leaks 🚫
-
-In non-strict mode, assigning to an undeclared variable implicitly creates a global variable. Strict Mode makes this an error.
-
-**Code Example:**
-
-```javascript
-// Non-Strict Mode (without 'use strict'):
-function messyFunction() {
-    message = "Hello"; // 'message' becomes a global variable
-}
-messyFunction();
-console.log(message); // Output: Hello (No error)
-
-// Strict Mode:
-function cleanFunction() {
-    'use strict';
-    try {
-        errorMsg = "Oops"; // ReferenceError: errorMsg is not defined
-    } catch (e) {
-        console.log("Strict Mode Error:", e.name);
-    }
-}
-cleanFunction();
-// Output: Strict Mode Error: ReferenceError 
-```
-
-#### 2\. Disables Default `this` Binding 🎯
-
-As you learned earlier, in non-strict mode, when a function is called without an explicit owner (`simpleFunction()`), `this` defaults to the Global Object (`window`/`global`).
-
-In Strict Mode, **`this` remains `undefined`** in such standalone function calls, preventing accidental modifications to the global scope.
-
-**Code Example:**
-
-```javascript
-'use strict';
-
-function logThis() {
-    console.log('logThis(): this is', this);
-}
-
-logThis(); // Default Binding in Strict Mode
-// Output: logThis(): this is undefined 
-```
-
-#### 3\. Prevents Deleting Variables, Functions, and Arguments 🗑️
-
-Trying to delete simple variable names, functions, or function arguments will throw a `SyntaxError` or `TypeError`.
-
-**Code Example:**
-
-```javascript
-'use strict';
-let x = 10;
-
-// This will throw a TypeError in strict mode
-try {
-    delete x;
-} catch (e) {
-    console.log("Strict Mode Error:", e.name, "— cannot delete variable.");
-}
-// Output: Strict Mode Error: TypeError — cannot delete variable.
-```
-
-#### 4\. Prohibits Duplicate Parameter Names 👯
-
-Strict Mode makes it a `SyntaxError` to have two or more parameters with the same name in a function declaration.
-
-**Code Example:**
-
-```javascript
-// This throws a SyntaxError in strict mode
-/*
-function sum(a, b, a) { // SyntaxError
-    'use strict'; 
-    // ...
-}
-*/
-```
-
-#### 5\. Restricts `eval` Usage 🤫
-
-Strict Mode prevents variables declared inside an `eval()` call from creating new variables in the surrounding scope. This improves security and predictability.
-
----
-
-### How to Apply Strict Mode
-
-You can apply Strict Mode globally or locally:
-
-1. **Entire Script (Global Strict Mode):** Put `'use strict';` at the very top of your JavaScript file.
-
-    ```javascript
-    'use strict';
-
-    // All code in this file is now executed in strict mode.
-    function foo() { /* ... */ }
-    // ...
-    ```
-
-2. **Function Level (Local Strict Mode):** Put `'use strict';` at the top of a specific function body. This is useful for migrating code gradually.
-
-    ```javascript
-    // This code is not in strict mode
-    function safeFunction() {
-        'use strict';
-        // Only the code inside this function is in strict mode.
-    }
-    // This code is not in strict mode
-    ```
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Directive** | Enabled by the string literal `'use strict';` at the start of a script or function. |
-| **Safety First** | It turns many confusing, silent failures into explicit **runtime errors** (e.g., undeclared variables). |
-| **Global `this`** | Prevents `this` from defaulting to the Global Object in function calls, making it **`undefined`** instead. |
-| **Best Practice** | It's highly recommended to write all new JavaScript code in Strict Mode for better code quality, debuggability, and performance. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Strict mode - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
-* **javascript.info:** [Strict Mode](https://javascript.info/strict-mode)
 
 ---
 
