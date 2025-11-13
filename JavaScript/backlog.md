@@ -1,5 +1,8 @@
 # Backlog
 
+Next  
+25
+
 8. Practice and understand **Closures** and their utility.
 9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
 12. Investigate how JavaScript handles **Garbage Collection**.
@@ -10,7 +13,7 @@
 22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
 23. Learn basic **error handling** with **`try`/`catch`** blocks.
 24. Study how to create and use **custom errors**.
-25. Understand the difference between **Deep vs Shallow Copy**.
+X 25. Understand the difference between **Deep vs Shallow Copy**.
 26. Explore the concept of **Immutability** in JavaScript.
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
@@ -27,6 +30,12 @@
 42. Currying
 43. Memoization
 44. Custom Hooks
+
+- Find second highest number from the given list of numbers.
+- Find second lowest number from the given list of numbers.
+- == vs ===
+- Coding question - https://www.youtube.com/shorts/8EkdjS8IY0Q
+- Coding question - https://www.youtube.com/shorts/wDuJUiJfv4k
 
 
 ## #8 Practice and understand **Closures** and their utility.
