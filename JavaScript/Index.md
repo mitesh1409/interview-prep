@@ -19,6 +19,7 @@
 15. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 16. [Shallow Copy vs Deep Copy](./Q-16.md)
 17. [Coding Question](./Q-17.md)
+18. [Coding Question](./Q-18.md)
 
 ## Basic
 
