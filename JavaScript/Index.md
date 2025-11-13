@@ -20,6 +20,7 @@
 16. [Shallow Copy vs Deep Copy](./Q-16.md)
 17. [Coding Question](./Q-17.md)
 18. [Coding Question](./Q-18.md)
+19. [Equality Operators: `==` vs `===`](./Q-19.md)
 
 ## Basic
 
