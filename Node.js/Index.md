@@ -8,6 +8,11 @@
 4. [What is the difference between Node.js and Express.js?](./Q-4.md)
 5. [What are the differences between Client-Side (Browser) and Server-Side (Node.js)?](./Q-5.md)
 6. [What are the 7 main features of Node.js?](./Q-6.md)
+7. [Explain Node.js Architecture](./Q-7.md)
+
+Backlog  
+
+* using global error handlers like process.on('uncaughtException')
 
 ## Basic
 
