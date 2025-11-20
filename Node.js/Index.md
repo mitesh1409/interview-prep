@@ -12,6 +12,7 @@
 8. [package-lock.json and Versioning NPM Packages](./Q-8.md)
 9. [What is Single Threaded programming?](./Q-9.md)
 10. [What is Synchronous programming?](./Q-10.md)
+11. [What is Multi Threaded programming?](./Q-11.md)
 
 Backlog  
 
