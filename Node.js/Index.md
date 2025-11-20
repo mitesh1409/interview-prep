@@ -14,7 +14,6 @@
 Backlog  
 
 * using global error handlers like process.on('uncaughtException')
-* versioning in Node.js
 
 ## Basic
 
