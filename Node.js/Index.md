@@ -18,6 +18,9 @@
 14. [What are the main features and advantages of Node.js?](./Q-14.md)
 15. [What are the disadvantages of Node.js? When to use and when not to use Node.js?](./Q-15.md)
 16. [What is npm? What is the purpose of package.json, package-lock.json files & node_modules folder?](./Q-16.md)
+17. [What are Modules in Node.js? Module vs Function](./Q-17.md)
+18. [What is module wrapper function?](./Q-18.md)
+19. [What are different types of modules in Node.js?](./Q-19.md)
 
 Backlog  
 
