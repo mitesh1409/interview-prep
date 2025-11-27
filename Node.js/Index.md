@@ -14,6 +14,9 @@
 10. [What is Synchronous programming?](./Q-10.md)
 11. [What is Multi Threaded programming?](./Q-11.md)
 12. [What is Asynchronous programming? Synchronous vs Asynchronous](./Q-12.md)
+13. [What are Event, Event Handler/Listener, Event Emitter, Event Queue, Event Loop, Event Driven?](./Q-13.md)
+14. [What are the main features and advantages of Node.js?](./Q-14.md)
+15. [What are the disadvantages of Node.js? When to use and when not to use Node.js?](./Q-15.md)
 
 Backlog  
 
