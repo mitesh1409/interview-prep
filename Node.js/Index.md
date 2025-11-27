@@ -21,6 +21,8 @@
 17. [What are Modules in Node.js? Module vs Function](./Q-17.md)
 18. [What is module wrapper function?](./Q-18.md)
 19. [What are different types of modules in Node.js?](./Q-19.md)
+20. [Top 5 built-in modules in Node.js](./Q-20.md)
+21. [Function vs Event](./Q-21.md)
 
 Backlog  
 
