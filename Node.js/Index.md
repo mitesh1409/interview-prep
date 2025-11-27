@@ -17,6 +17,7 @@
 13. [What are Event, Event Handler/Listener, Event Emitter, Event Queue, Event Loop, Event Driven?](./Q-13.md)
 14. [What are the main features and advantages of Node.js?](./Q-14.md)
 15. [What are the disadvantages of Node.js? When to use and when not to use Node.js?](./Q-15.md)
+16. [What is npm? What is the purpose of package.json, package-lock.json files & node_modules folder?](./Q-16.md)
 
 Backlog  
 
