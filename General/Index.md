@@ -7,7 +7,7 @@
 3. [L in SOLID Principles - LSP - Liskov Substitution Principle](./Q-3.md)
 4. [I in SOLID Principles - ISP - Interface Segregation Principle](./Q-4.md)
 5. [D in SOLID Principles - DIP - Dependency Inversion Principle](./Q-5.md)
-
+6. [Authentication vs Authorization](./Q-6.md)
 
 ## Backlog
 
