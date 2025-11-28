@@ -2,15 +2,14 @@ git add . && git commit -m "🚀" && git push
 
 JavaScript
 
-1.  Higher order functions
-2.  Pure functions
-3.  IIFE
+1.  Pure functions
+2.  IIFE
 
-4.  Optional chaining
-5.  Nullish coalescing
+3.  Optional chaining
+4.  Nullish coalescing
 
-6.  OOPS => Classes (Take it from Learn Angular book)
-7.  Currying
+5.  OOPS => Classes (Take it from Learn Angular book)
+6.  Currying
 
 General
 

@@ -25,6 +25,7 @@
 21. [Memoization](./Q-21.md)
 22. [Functions as first class citizens in JavaScript](./Q-22.md)
 23. [Function expression, Function statement, Function Declaration](./Q-23.md)
+24. [Higher order functions](./Q-24.md)
 
 ## Basic
 
