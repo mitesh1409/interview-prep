@@ -14,7 +14,6 @@ Next
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
 
-32. Functions as first class citizens in JavaScript
 33. Function expression, Function statement, Function Declaration
 34. Higher order functions
 35. Pure functions
@@ -26,7 +25,6 @@ Next
 39. Nullish coalescing
 40. Classes (Take it from Learn Angular book)
 42. Currying
-43. Memoization
 44. Custom Hooks
 
 - Find second highest number from the given list of numbers.
