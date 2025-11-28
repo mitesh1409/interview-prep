@@ -22,6 +22,7 @@
 18. [Coding Question](./Q-18.md)
 19. [Equality Operators: `==` vs `===`](./Q-19.md)
 20. [Coding Question](./Q-20.md)
+21. [Memoization](./Q-21.md)
 
 ## Basic
 
