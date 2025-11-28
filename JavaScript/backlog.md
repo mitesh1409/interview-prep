@@ -14,7 +14,6 @@ Next
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
 
-33. Function expression, Function statement, Function Declaration
 34. Higher order functions
 35. Pure functions
 14. Understand and implement **arrow functions**.
