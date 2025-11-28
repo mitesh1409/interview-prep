@@ -39,6 +39,7 @@ Next
 ### Closures
 
 Closure = Function + Lexical Environment
+Closure = The combination of a function and the lexical environment within which that function was declared. 
 A **Closure** is the combination of a function bundled together (enclosed) with references to its surrounding state (the **lexical environment**). In simpler terms, a closure gives you access to an outer function's scope from an inner function, even after the outer function has finished executing.
 
 ### What, Why, and How
