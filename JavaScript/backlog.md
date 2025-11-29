@@ -2,9 +2,7 @@
 
 Next  
 
-9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
 12. Investigate how JavaScript handles **Garbage Collection**.
-
 20. Study asynchronous patterns using **callbacks**.
 21. Master **promises** for handling asynchronous operations.
 22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
@@ -13,22 +11,10 @@ Next
 26. Explore the concept of **Immutability** in JavaScript.
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
-
-35. Pure functions
 14. Understand and implement **arrow functions**.
 8. Practice and understand **Closures** and their utility.
-36. IIFE
 37. Memory Leaks
-38. Optional chaining
-39. Nullish coalescing
-40. Classes (Take it from Learn Angular book)
-42. Currying
 44. Custom Hooks
-
-- Find second highest number from the given list of numbers.
-- Find second lowest number from the given list of numbers.
-- == vs ===
-
 
 ## #8 Practice and understand **Closures** and their utility.
 
