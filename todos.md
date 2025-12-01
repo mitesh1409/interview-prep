@@ -89,3 +89,9 @@ https://blog.postman.com/what-are-http-headers/#:~:text=HTTP%20204%20No%20Conten
 
 #12
 Sessions vs Cookies
+
+#13
+Trunk based development
+https://trunkbaseddevelopment.com/
+
+Mono repo vs Multi repo
