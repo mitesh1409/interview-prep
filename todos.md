@@ -4,8 +4,6 @@ git add . && git commit -m "🚀" && git push
 
 1.  IIFE
 
-2.  Optional chaining
-
 3.  Nullish coalescing
 https://javascript.info/nullish-coalescing-operator
 
