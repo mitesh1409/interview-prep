@@ -88,3 +88,7 @@ Trunk based development
 https://trunkbaseddevelopment.com/
 
 Mono repo vs Multi repo
+
+---
+
+## MySQL
