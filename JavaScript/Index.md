@@ -29,7 +29,7 @@
 25. [Pure functions](./Q-25.md)
 26. [Prototype & Prototype Chain](./Q-26.md)
 27. [OOPS - Classes](./Q-27.md)
-28. [Optional chaining](./Q-28.md)
+28. [Optional chaining operator `?.`](./Q-28.md)
 29. [Nullish coalescing operator `??`](./Q-29.md)
 
 ## Basic
