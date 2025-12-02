@@ -9,8 +9,6 @@ git add . && git commit -m "🚀" && git push
 3.  Nullish coalescing
 https://javascript.info/nullish-coalescing-operator
 
-4.  OOPS => Classes (Take it from Learn Angular book)
-
 5.  Currying
 
 - Find second highest number from the given list of numbers.

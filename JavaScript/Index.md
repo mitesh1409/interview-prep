@@ -28,6 +28,7 @@
 24. [Higher order functions](./Q-24.md)
 25. [Pure functions](./Q-25.md)
 26. [Prototype & Prototype Chain](./Q-26.md)
+27. [OOPS - Classes](./Q-27.md)
 
 ## Basic
 
