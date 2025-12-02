@@ -1,6 +1,6 @@
 git add . && git commit -m "🚀" && git push
 
-JavaScript
+## JavaScript
 
 1.  IIFE
 
@@ -16,19 +16,16 @@ https://javascript.info/nullish-coalescing-operator
 - Find second highest number from the given list of numbers.
 - Find second lowest number from the given list of numbers.
 
-9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
-Check backlog for the current content.
-
 ---
 
-Git
+## Git
 
 #1
 What is Git fork?
 
 ---
 
-General
+## General
 
 #1
 Microservice Architecture
