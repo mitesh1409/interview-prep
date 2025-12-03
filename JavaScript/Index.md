@@ -31,6 +31,8 @@
 27. [OOPS - Classes](./Q-27.md)
 28. [Optional chaining operator `?.`](./Q-28.md)
 29. [Nullish coalescing operator `??`](./Q-29.md)
+30. [About `NaN`](./Q-30.md)
+31. [About `Infinity` & `-Infinity`](./Q-31.md)
 
 ## Basic
 
