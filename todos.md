@@ -12,6 +12,9 @@ https://javascript.info/nullish-coalescing-operator
 - Find second highest number from the given list of numbers.
 - Find second lowest number from the given list of numbers.
 
+6. Method Chaining
+Check [The Validation Chain](https://express-validator.github.io/docs/guides/validation-chain).
+
 ---
 
 ## Git
@@ -88,6 +91,21 @@ Trunk based development
 https://trunkbaseddevelopment.com/
 
 Mono repo vs Multi repo
+
+#14
+XSS
+
+#15
+CSRF
+
+#16
+CORS
+
+#17
+SQL Injection
+
+#18
+Session Hijacking
 
 ---
 
