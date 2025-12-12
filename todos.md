@@ -107,6 +107,14 @@ SQL Injection
 #18
 Session Hijacking
 
+#19
+URL Segments
+https://developer.mozilla.org/en-US/docs/Web/API/Location#location_anatomy
+
+href = origin + pathname + search + hash
+origin = protocol + host
+host = hostname + port
+
 ---
 
 ## MySQL
