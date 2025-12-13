@@ -29,6 +29,8 @@
 25. [How does Node.js handles asynchronous operations?](./Q-25.md)
 26. [How do you handle errors in asynchronous code? Provide examples.](./Q-26.md)
 27. [Coding Question](./Q-27.md)
+28. [How would you handle multiple asynchronous calls efficiently?](./Q-28.md)
+29. [Simple HTTP Server using Node.js Only](./Q-29.md)
 
 Backlog  
 
