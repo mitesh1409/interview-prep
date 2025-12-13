@@ -27,6 +27,8 @@
 23. [Explain `process.nextTick` in Node.js](./Q-23.md)
 24. [CommonJS Module vs ECMAScript Module in Node.js](./Q-24.md)
 25. [How does Node.js handles asynchronous operations?](./Q-25.md)
+26. [How do you handle errors in asynchronous code? Provide examples.](./Q-26.md)
+27. [Coding Question](./Q-27.md)
 
 Backlog  
 
