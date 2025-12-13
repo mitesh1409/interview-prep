@@ -26,6 +26,7 @@
 22. [Order of Execution of a Node.js Application](./Q-22.md)
 23. [Explain `process.nextTick` in Node.js](./Q-23.md)
 24. [CommonJS Module vs ECMAScript Module in Node.js](./Q-24.md)
+25. [How does Node.js handles asynchronous operations?](./Q-25.md)
 
 Backlog  
 
