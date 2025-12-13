@@ -35,6 +35,7 @@
 Backlog  
 
 * using global error handlers like process.on('uncaughtException')
+* using global error handlers like process.on('unhandledRejection')
 
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
