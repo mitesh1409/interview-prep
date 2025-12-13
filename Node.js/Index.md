@@ -25,6 +25,7 @@
 21. [Function vs Event](./Q-21.md)
 22. [Order of Execution of a Node.js Application](./Q-22.md)
 23. [Explain `process.nextTick` in Node.js](./Q-23.md)
+24. [`require()` vs `import` in Node.js](./Q-24.md)
 
 Backlog  
 
