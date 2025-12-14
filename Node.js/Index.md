@@ -38,6 +38,9 @@
 34. [How can you secure a Node.js application?](./Q-34.md)
 35. [What is Buffer in Node.js?](./Q-35.md)
 36. [How do you handle large file uploads efficiently in Node.js?](./Q-36.md)
+37. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-37.md)
+38. [How would you implement caching in a Node.js application to improve performance?](./Q-38.md)
+39. [How would you manage environment variables in a Node.js application?](./Q-39.md)
 
 Backlog  
 
