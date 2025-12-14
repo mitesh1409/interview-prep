@@ -31,6 +31,8 @@
 27. [Coding Question](./Q-27.md)
 28. [How would you handle multiple asynchronous calls efficiently?](./Q-28.md)
 29. [Simple HTTP Server using Node.js Only](./Q-29.md)
+30. [Promises in Node.js](./Q-30.md)
+31. [What happens if an unhandled promise rejection occurs?](./Q-31.md)
 
 Backlog  
 
