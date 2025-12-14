@@ -56,6 +56,7 @@ Backlog
 * worker threads vs cluster vs child_process comparison
 * using global error handlers like process.on('uncaughtException')
 * using global error handlers like process.on('unhandledRejection')
+* How do you design an observability stack in AWS for a large microservices system?
 
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
