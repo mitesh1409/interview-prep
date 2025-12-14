@@ -43,9 +43,12 @@
 39. [How would you manage environment variables in a Node.js application?](./Q-39.md)
 40. [How would you handle rate limiting in a Node.js API?](./Q-40.md)
 41. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
+42. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
+43. [What is clustering in Node.js and when should it be used?](./Q-43.md)
 
 Backlog  
 
+* worker threads vs cluster vs child_process comparison
 * using global error handlers like process.on('uncaughtException')
 * using global error handlers like process.on('unhandledRejection')
 
