@@ -45,6 +45,11 @@
 41. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
 42. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
 43. [What is clustering in Node.js and when should it be used?](./Q-43.md)
+44. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-44.md)
+45. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
+46. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
+47. [How would you implement logging in a Node.js application?](./Q-47.md)
+
 
 Backlog  
 
