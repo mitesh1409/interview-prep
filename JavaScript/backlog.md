@@ -2,9 +2,7 @@
 
 Next  
 
-9. Grasp the concepts of **Prototype** and the **Prototype Chain**.
 12. Investigate how JavaScript handles **Garbage Collection**.
-
 20. Study asynchronous patterns using **callbacks**.
 21. Master **promises** for handling asynchronous operations.
 22. Implement and understand **`async`/`await`** for cleaner asynchronous code.
@@ -13,22 +11,10 @@ Next
 26. Explore the concept of **Immutability** in JavaScript.
 27. Learn to use **`Object.assign`** for shallow copying and merging objects.
 28. Understand when to use **`structuredClone`** for deep copying.
-
-35. Pure functions
 14. Understand and implement **arrow functions**.
 8. Practice and understand **Closures** and their utility.
-36. IIFE
 37. Memory Leaks
-38. Optional chaining
-39. Nullish coalescing
-40. Classes (Take it from Learn Angular book)
-42. Currying
 44. Custom Hooks
-
-- Find second highest number from the given list of numbers.
-- Find second lowest number from the given list of numbers.
-- == vs ===
-
 
 ## #8 Practice and understand **Closures** and their utility.
 
@@ -164,126 +150,6 @@ The need for data encapsulation and private state management that closures tradi
 * **MDN Web Docs:** [Closures - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * **javascript.info:** [Closures](https://javascript.info/closure)
 * **YouTube Video:** Search for "JavaScript Closures Explained" for a visual deep dive.
-
----
-
-## #9 Grasp the concepts of **Prototype** and the **Prototype Chain**.
-
-**Prototypes** and the **Prototype Chain** are foundational to object-oriented programming in JavaScript.
-
-### Prototypes and the Prototype Chain
-
-JavaScript uses a **prototype-based inheritance model**, meaning objects inherit properties and methods from other objects. **Prototypes** are the mechanism by which this inheritance is achieved.
-
-### What is a Prototype?
-
-| Aspect | Details |
-| :--- | :--- |
-| **What is it?** | A plain object (the prototype object) that another object uses as a blueprint for inheriting properties and methods. |
-| **How to Access it?** | Every object in JavaScript has an internal property, accessible via `Object.getPrototypeOf(obj)` or, historically and less commonly, the non-standard `obj.__proto__`. |
-| **Function Role** | Every function (including constructor functions) automatically gets a special property called **`prototype`** (not to be confused with the internal `__proto__` link). Objects created via `new FunctionName()` automatically get linked to `FunctionName.prototype`. |
-
-### Code Example: Creating and Inheriting
-
-```javascript
-// 1. Define a Constructor Function
-function Vehicle(make) {
-    this.make = make;
-}
-
-// 2. Add a method to the constructor's prototype
-Vehicle.prototype.startEngine = function() {
-    console.log(`The ${this.make} engine is starting.`);
-};
-
-// 3. Create a new object instance
-const car = new Vehicle('Honda');
-
-// The instance 'car' does not have 'startEngine' directly, but inherits it
-car.startEngine(); // Output: The Honda engine is starting.
-
-// Accessing the internal prototype link
-console.log(Object.getPrototypeOf(car) === Vehicle.prototype); // Output: true
-```
-
----
-
-### The Prototype Chain: The Inheritance Link
-
-The **Prototype Chain** is the hierarchy of links between objects that determines the inheritance path.
-
-### How the Chain Works
-
-1. When you try to access a property or method on an object (e.g., `car.make` or `car.startEngine()`), the JavaScript engine first checks if the property exists **directly** on the object itself.
-2. If it doesn't find the property there, it follows the internal **`[[Prototype]]` link** (the `__proto__` link) to the object's prototype.
-3. It checks the prototype object for the property.
-4. If it still isn't found, it follows the prototype's own `[[Prototype]]` link up the chain.
-5. This continues until it reaches the end of the chain, which is always **`Object.prototype`**.
-6. The prototype of `Object.prototype` is **`null`**, which terminates the chain. If the property is not found anywhere, the result is `undefined`.
-
-### Code Example: Traversing the Chain
-
-```javascript
-// Function Constructor
-function Animal(name) {
-    this.name = name;
-}
-Animal.prototype.speak = function() { return `${this.name} makes a sound.`; };
-
-// Inheriting Constructor (ES5 style)
-function Dog(name, breed) {
-    Animal.call(this, name);
-    this.breed = breed;
-}
-Dog.prototype = Object.create(Animal.prototype); // 1. Link Dog's prototype to Animal's prototype
-
-const rex = new Dog('Rex', 'Shepherd');
-
-// Prototype Chain Lookup for rex.toString:
-// 1. Is toString on 'rex'? No.
-// 2. Follow __proto__ to Dog.prototype. Is toString here? No.
-// 3. Follow Dog.prototype's __proto__ to Animal.prototype. Is toString here? No.
-// 4. Follow Animal.prototype's __proto__ to Object.prototype. Is toString here? YES!
-console.log(rex.toString()); // Inherits from Object.prototype
-```
-
-**Chain:** `rex` $\rightarrow$ `Dog.prototype` $\rightarrow$ `Animal.prototype` $\rightarrow$ `Object.prototype` $\rightarrow$ `null`
-
-### Relationship with Classes (ES6)
-
-ES6 **Classes** are primarily **syntactical sugar** over the prototype-based inheritance model. The `extends` and `super` keywords simply automate the complex linkage necessary to set up the prototype chain correctly.
-
-**ES6 Class Example:**
-
-```javascript
-class Animal {
-    // ...
-}
-class Dog extends Animal { // Internally sets Dog.prototype to inherit from Animal.prototype
-    // ...
-}
-```
-
-The underlying mechanism is still the prototype chain.
-
----
-
-### 💡 Summary / Key Takeaways
-
-| Key Concept | Description |
-| :--- | :--- |
-| **Prototype** | An object serving as a template; an instance object is linked to it via the internal `[[Prototype]]` property. |
-| **Prototype Chain** | The sequence of linked objects that the JS engine traverses to look up properties and methods, providing inheritance. |
-| **Lookup Rule** | Properties are searched directly on the object, then up the chain, until `Object.prototype` (and then `null`) is reached. |
-| **ES6 Classes** | They are syntactic sugar; they use the **Prototype Chain** under the hood to manage inheritance. |
-
----
-
-### 🔗 References
-
-* **MDN Web Docs:** [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-* **javascript.info:** [Prototypal inheritance](https://javascript.info/prototype-inheritance)
-* **YouTube Video:** Search for "JavaScript Prototypes and Prototype Chain" for visual diagrams.
 
 ---
 

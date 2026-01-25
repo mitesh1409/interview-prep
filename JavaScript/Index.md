@@ -27,6 +27,12 @@
 23. [Function expression, Function statement, Function Declaration](./Q-23.md)
 24. [Higher order functions](./Q-24.md)
 25. [Pure functions](./Q-25.md)
+26. [Prototype & Prototype Chain](./Q-26.md)
+27. [OOPS - Classes](./Q-27.md)
+28. [Optional chaining operator `?.`](./Q-28.md)
+29. [Nullish coalescing operator `??`](./Q-29.md)
+30. [About `NaN`](./Q-30.md)
+31. [About `Infinity` & `-Infinity`](./Q-31.md)
 
 ## Basic
 

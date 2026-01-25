@@ -23,10 +23,40 @@
 19. [What are different types of modules in Node.js?](./Q-19.md)
 20. [Top 5 built-in modules in Node.js](./Q-20.md)
 21. [Function vs Event](./Q-21.md)
+22. [Order of Execution of a Node.js Application](./Q-22.md)
+23. [Explain `process.nextTick` in Node.js](./Q-23.md)
+24. [CommonJS Module vs ECMAScript Module in Node.js](./Q-24.md)
+25. [How does Node.js handles asynchronous operations?](./Q-25.md)
+26. [How do you handle errors in asynchronous code? Provide examples.](./Q-26.md)
+27. [Coding Question](./Q-27.md)
+28. [How would you handle multiple asynchronous calls efficiently?](./Q-28.md)
+29. [Simple HTTP Server using Node.js Only](./Q-29.md)
+30. [Promises in Node.js](./Q-30.md)
+31. [What happens if an unhandled promise rejection occurs?](./Q-31.md)
+32. [Middleware in Express.js](./Q-32.md)
+33. [What are Streams in Node.js?](./Q-33.md)
+34. [How can you secure a Node.js application?](./Q-34.md)
+35. [What is Buffer in Node.js?](./Q-35.md)
+36. [How do you handle large file uploads efficiently in Node.js?](./Q-36.md)
+37. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-37.md)
+38. [How would you implement caching in a Node.js application to improve performance?](./Q-38.md)
+39. [How would you manage environment variables in a Node.js application?](./Q-39.md)
+40. [How would you handle rate limiting in a Node.js API?](./Q-40.md)
+41. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
+42. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
+43. [What is clustering in Node.js and when should it be used?](./Q-43.md)
+44. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-44.md)
+45. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
+46. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
+47. [How would you implement logging in a Node.js application?](./Q-47.md)
+
 
 Backlog  
 
+* worker threads vs cluster vs child_process comparison
 * using global error handlers like process.on('uncaughtException')
+* using global error handlers like process.on('unhandledRejection')
+* How do you design an observability stack in AWS for a large microservices system?
 
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
