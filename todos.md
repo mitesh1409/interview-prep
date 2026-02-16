@@ -14,9 +14,28 @@ https://javascript.info/nullish-coalescing-operator
 6. Method Chaining
 Check [The Validation Chain](https://express-validator.github.io/docs/guides/validation-chain).
 
+
+- JavaScript class has no access modifiers (like private, public, protected)
+- Private members are marked using `#`
+- Inheritance
+  - Multiple inheritance not allowed
+  - Multi-level inheritance allowed
+- Mixins
+
+- Optional Chaining (`?.`)
+- Nullish Coalescing (`??`)
+- Logical OR (`||`)
+
+- Object Destructuring
+- Array Destructuring
+
 npm, nvm, npx
 
 semantic versioning
+
+Array methods in JavaScript
+
+Apply, Call and Bind in JavaScript
 
 ---
 
