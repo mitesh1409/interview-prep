@@ -14,6 +14,10 @@ https://javascript.info/nullish-coalescing-operator
 6. Method Chaining
 Check [The Validation Chain](https://express-validator.github.io/docs/guides/validation-chain).
 
+npm, nvm, npx
+
+semantic versioning
+
 ---
 
 ## Git
