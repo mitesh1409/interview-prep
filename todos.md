@@ -37,6 +37,12 @@ Array methods in JavaScript
 
 Apply, Call and Bind in JavaScript
 
+Spread and Rest operator
+
+- Truthy Values
+- Falsy Values
+Use `Boolean(value)` function to identify Truthy/Falsy values.
+
 ---
 
 ## Git
