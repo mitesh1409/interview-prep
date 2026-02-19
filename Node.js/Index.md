@@ -59,6 +59,32 @@ Backlog
 * using global error handlers like process.on('unhandledRejection')
 * How do you design an observability stack in AWS for a large microservices system?
 
+- Q1. What is Node.js?  
+- Q2. What is the difference between Node.js and JavaScript?  
+- Q3. Can you explain the working of Node.js?  
+- Q4. Why is Node.js single-threaded?  
+- Q5. Why is Node.js so popular these days?  
+- Q6. How to write "Hello World" using Node.js?  
+- Q7. What is synchronous and asynchronous programming?  
+- Q8. How does Node.js achieve asynchronous programming?  
+- Q9. What is the event loop in Node.js, and how does it work?  
+- Q10. What is callback hell, and what are the methods to avoid it?  
+- Q11. What are promises in Node.js?  
+- Q12. How can you use Async/Await in Node.js?  
+- Q13. What is Package.json?  
+- Q14. What are 5 built-in modules in Node.js?  
+- Q15. What is Middleware in Node.js?  
+- Q16. What is the purpose of Module Exports?  
+- Q17. Express.js vs Node.js.  
+- Q18. What is Event-Driven Programming?  
+- Q19. What is the role of the Event Module?  
+- Q20. What is the role of the Buffer Class in Node.js?  
+- Q21. SetImmediate() vs SetTimeout().  
+- Q22. What is Node.js Web Application Architecture?  
+- Q23. What are the types of Streams in Node.js?  
+- Q24. What is the purpose of the CreateServer() method?  
+- Q25. What are commonly used libraries in Node.js?  
+
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
 ## Basic
