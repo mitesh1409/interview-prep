@@ -33,53 +33,36 @@
 29. [How would you handle multiple asynchronous calls efficiently? OR Promises parallel, sequence & race execution](./Q-1771601292399.md)
 30. [Simple HTTP Server using Node.js Only](./Q-1771601388409.md)
 31. [Promises in Node.js](./Q-1771601441195.md)
-32. [What happens if an unhandled promise rejection occurs? OR The purpose of using global error handlers like process.on('unhandledRejection')](./Q-1771601666435.md)
-33. [Middleware in Express.js](./Q-32.md)
-34. [What are Streams in Node.js?](./Q-33.md)
-35. [How can you secure a Node.js application?](./Q-34.md)
-36. [What is Buffer in Node.js?](./Q-35.md)
-37. [How do you handle large file uploads efficiently in Node.js?](./Q-36.md)
-38. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-37.md)
-39. [How would you implement caching in a Node.js application to improve performance?](./Q-38.md)
-40. [How would you manage environment variables in a Node.js application?](./Q-39.md)
-41. [How would you handle rate limiting in a Node.js API?](./Q-40.md)
-42. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
-43. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
-44. [What is clustering in Node.js and when should it be used?](./Q-43.md)
-45. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-44.md)
-46. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
-47. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
-48. [How would you implement logging in a Node.js application?](./Q-47.md)
+32. [What happens if an unhandled promise rejection occurs? OR The purpose of using global error handlers like `process.on('unhandledRejection')`](./Q-1771601666435.md)
+33. [What happens if an uncaught exception occurs? OR The purpose of using global error handlers like `process.on('uncaughtException')`](./Q-1772174646207.md)
+34. [Middleware in Express.js](./Q-32.md)
+35. [What are Streams in Node.js?](./Q-33.md)
+36. [How can you secure a Node.js application?](./Q-34.md)
+37. [What is Buffer in Node.js?](./Q-35.md)
+38. [How do you handle large file uploads efficiently in Node.js?](./Q-36.md)
+39. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-37.md)
+40. [How would you implement caching in a Node.js application to improve performance?](./Q-38.md)
+41. [How would you manage environment variables in a Node.js application?](./Q-39.md)
+42. [How would you handle rate limiting in a Node.js API?](./Q-40.md)
+43. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
+44. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
+45. [What is clustering in Node.js and when should it be used?](./Q-43.md)
+46. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-44.md)
+47. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
+48. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
+49. [How would you implement logging in a Node.js application?](./Q-47.md)
 
 
 Backlog  
 
 * worker threads vs cluster vs child_process comparison
-* using global error handlers like process.on('uncaughtException')
 * How do you design an observability stack in AWS for a large microservices system?
 
-- Q1. What is Node.js?  
-- Q2. What is the difference between Node.js and JavaScript?  
-- Q3. Can you explain the working of Node.js?  
-- Q4. Why is Node.js single-threaded?  
-- Q5. Why is Node.js so popular these days?  
-- Q6. How to write "Hello World" using Node.js?  
-- Q7. What is synchronous and asynchronous programming?  
-- Q8. How does Node.js achieve asynchronous programming?  
-- Q9. What is the event loop in Node.js, and how does it work?  
-- Q10. What is callback hell, and what are the methods to avoid it?  
-- Q11. What are promises in Node.js?  
-- Q12. How can you use Async/Await in Node.js?  
-- Q13. What is Package.json?  
-- Q14. What are 5 built-in modules in Node.js?  
 - Q15. What is Middleware in Node.js?  
 - Q16. What is the purpose of Module Exports?  
-- Q17. Express.js vs Node.js.  
-- Q18. What is Event-Driven Programming?  
 - Q19. What is the role of the Event Module?  
 - Q20. What is the role of the Buffer Class in Node.js?  
 - Q21. SetImmediate() vs SetTimeout().  
-- Q22. What is Node.js Web Application Architecture?  
 - Q23. What are the types of Streams in Node.js?  
 - Q24. What is the purpose of the CreateServer() method?  
 - Q25. What are commonly used libraries in Node.js?  
