@@ -27,13 +27,13 @@
 23. [Order of Execution of a Node.js Application](./Q-1771585333788.md)
 24. [Explain `process.nextTick` in Node.js](./Q-1771585379085.md)
 25. [CommonJS Module vs ECMAScript Module in Node.js](./Q-1771585438788.md)
-26. [How does Node.js handles asynchronous operations?](./Q-1771585486291.md)
+26. [How does Node.js handles asynchronous operations? OR Callbacks, Promises, async-await in Node.js](./Q-1771585486291.md)
 27. [How do you handle errors in asynchronous code? Provide examples.](./Q-1771601217168.md)
 28. [Coding Question](./Q-1771601261333.md)
-29. [How would you handle multiple asynchronous calls efficiently?](./Q-1771601292399.md)
+29. [How would you handle multiple asynchronous calls efficiently? OR Promises parallel, sequence & race execution](./Q-1771601292399.md)
 30. [Simple HTTP Server using Node.js Only](./Q-1771601388409.md)
 31. [Promises in Node.js](./Q-1771601441195.md)
-32. [What happens if an unhandled promise rejection occurs?](./Q-1771601666435.md)
+32. [What happens if an unhandled promise rejection occurs? OR The purpose of using global error handlers like process.on('unhandledRejection')](./Q-1771601666435.md)
 33. [Middleware in Express.js](./Q-32.md)
 34. [What are Streams in Node.js?](./Q-33.md)
 35. [How can you secure a Node.js application?](./Q-34.md)
@@ -56,7 +56,6 @@ Backlog
 
 * worker threads vs cluster vs child_process comparison
 * using global error handlers like process.on('uncaughtException')
-* using global error handlers like process.on('unhandledRejection')
 * How do you design an observability stack in AWS for a large microservices system?
 
 - Q1. What is Node.js?  
