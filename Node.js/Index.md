@@ -57,6 +57,8 @@ Backlog
 
 * worker threads vs cluster vs child_process comparison
 * How do you design an observability stack in AWS for a large microservices system?
+* What is PM2 and how does it help in managing Node.js applications in production?
+[PM2 - Advanced Production Process Manager for Node.js](https://pm2.keymetrics.io/)
 
 - Q15. What is Middleware in Node.js?  
 - Q16. What is the purpose of Module Exports?  
