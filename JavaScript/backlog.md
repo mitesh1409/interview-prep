@@ -2,6 +2,10 @@
 
 Next  
 
+npm, npx, nvm  
+
+semantic versioning, the use of >=, <=, ^, ~ etc. in package.json explained.
+
 12. Investigate how JavaScript handles **Garbage Collection**.
 20. Study asynchronous patterns using **callbacks**.
 21. Master **promises** for handling asynchronous operations.
