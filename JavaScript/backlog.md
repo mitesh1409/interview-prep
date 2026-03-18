@@ -19,7 +19,7 @@ semantic versioning, the use of >=, <=, ^, ~ etc. in package.json explained.
 
 ## this in normal/regular function vs this in arrow function
 
-
+## Optional Chaining (`?.`), Nullish Coalescing (`??`), Logical OR (`||`) - take notes from react-masters repo
 
 
 12. Investigate how JavaScript handles **Garbage Collection**.
