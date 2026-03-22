@@ -6,6 +6,22 @@ npm, npx, nvm
 
 semantic versioning, the use of >=, <=, ^, ~ etc. in package.json explained.
 
+## Types of functions in JavaScript
+
+* Normal/regular functions
+* Arrow functions
+* Callback functions
+* IIFE
+* Anonymous functions
+* Pure functions
+
+## Why arrow functions are preferred while writing callbacks?
+
+## this in normal/regular function vs this in arrow function
+
+## Optional Chaining (`?.`), Nullish Coalescing (`??`), Logical OR (`||`) - take notes from react-masters repo
+
+
 12. Investigate how JavaScript handles **Garbage Collection**.
 20. Study asynchronous patterns using **callbacks**.
 21. Master **promises** for handling asynchronous operations.
