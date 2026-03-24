@@ -34,6 +34,9 @@
 30. [About `NaN`](./Q-30.md)
 31. [About `Infinity` & `-Infinity`](./Q-31.md)
 
+
+32. [Coding Question](./Q-1774332387681.md)
+
 ## Basic
 
 ## Intermediate
