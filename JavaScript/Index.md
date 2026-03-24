@@ -18,10 +18,7 @@
 14. [Spread & Rest](./Q-14.md)
 15. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 16. [Shallow Copy vs Deep Copy](./Q-16.md)
-17. [Coding Question](./Q-17.md)
-18. [Coding Question](./Q-18.md)
 19. [Equality Operators: `==` vs `===`](./Q-19.md)
-20. [Coding Question](./Q-20.md)
 21. [Memoization](./Q-21.md)
 22. [Functions as first class citizens in JavaScript](./Q-22.md)
 23. [Function expression, Function statement, Function Declaration](./Q-23.md)
@@ -35,7 +32,9 @@
 31. [About `Infinity` & `-Infinity`](./Q-31.md)
 
 
-32. [Coding Question](./Q-1774332387681.md)
+18. [Coding Question](./Q-1774355130506.md)
+20. [Coding Question](./Q-20.md)
+17. [Coding Question](./Q-17.md)
 
 ## Basic
 
