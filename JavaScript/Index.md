@@ -2,7 +2,7 @@
 
 ## Index
 
-1. [Execution Context](./Q-1.md)
+1. [Execution Context](./Q-1.md) [X]
 2. [Lexical Environment](./Q-2.md)
 3. [Call Stack](./Q-3.md)
 4. [Event Loop](./Q-4.md)
@@ -18,23 +18,21 @@
 14. [Spread & Rest](./Q-14.md)
 15. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 16. [Shallow Copy vs Deep Copy](./Q-16.md)
-19. [Equality Operators: `==` vs `===`](./Q-19.md)
-21. [Memoization](./Q-21.md)
-22. [Functions as first class citizens in JavaScript](./Q-22.md)
-23. [Function expression, Function statement, Function Declaration](./Q-23.md)
-24. [Higher order functions](./Q-24.md)
-25. [Pure functions](./Q-25.md)
-26. [Prototype & Prototype Chain](./Q-26.md)
-27. [OOPS - Classes](./Q-27.md)
-28. [Optional chaining operator `?.`](./Q-28.md)
-29. [Nullish coalescing operator `??`](./Q-29.md)
-30. [About `NaN`](./Q-30.md)
-31. [About `Infinity` & `-Infinity`](./Q-31.md)
-
-
-18. [Coding Question](./Q-1774355130506.md)
-20. [Coding Question](./Q-1774355330317.md)
-17. [Coding Question](./Q-1774355544775.md)
+17. [Equality Operators: `==` vs `===`](./Q-19.md)
+18. [Memoization](./Q-21.md)
+19. [Functions as first class citizens in JavaScript](./Q-22.md)
+20. [Function expression, Function statement, Function Declaration](./Q-23.md)
+21. [Higher order functions](./Q-24.md)
+22. [Pure functions](./Q-25.md)
+23. [Prototype & Prototype Chain](./Q-26.md)
+24. [OOPS - Classes](./Q-27.md)
+25. [Optional chaining operator `?.`](./Q-28.md)
+26. [Nullish coalescing operator `??`](./Q-29.md)
+27. [About `NaN`](./Q-30.md)
+28. [About `Infinity` & `-Infinity`](./Q-31.md)
+29. [Coding Question](./Q-1774355130506.md) [X]
+30. [Coding Question](./Q-1774355330317.md) [X]
+31. [Coding Question](./Q-1774355544775.md) [X]
 
 ## Basic
 
