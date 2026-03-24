@@ -2,8 +2,8 @@
 
 ## Index
 
-1. [Execution Context](./Q-1.md) [X]
-2. [Lexical Environment](./Q-2.md)
+1. [Execution Context](./Q-1774359808726.md) [X]
+2. [Lexical Environment](./Q-1774359843566.md) [X]
 3. [Call Stack](./Q-3.md)
 4. [Event Loop](./Q-4.md)
 5. [Task/Callback/Message Queue](./Q-5.md)
@@ -29,7 +29,7 @@
 25. [Optional chaining operator `?.`](./Q-28.md)
 26. [Nullish coalescing operator `??`](./Q-29.md)
 27. [About `NaN`](./Q-30.md)
-28. [About `Infinity` & `-Infinity`](./Q-31.md)
+28. [About `Infinity` & `-Infinity`](./Q-1774360273121.md) [X]
 29. [Coding Question](./Q-1774355130506.md) [X]
 30. [Coding Question](./Q-1774355330317.md) [X]
 31. [Coding Question](./Q-1774355544775.md) [X]
