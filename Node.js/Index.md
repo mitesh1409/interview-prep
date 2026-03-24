@@ -51,6 +51,7 @@
 47. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
 48. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
 49. [How would you implement logging in a Node.js application?](./Q-47.md)
+50. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
 
 
 Backlog  
@@ -59,6 +60,9 @@ Backlog
 * How do you design an observability stack in AWS for a large microservices system?
 * What is PM2 and how does it help in managing Node.js applications in production?
 [PM2 - Advanced Production Process Manager for Node.js](https://pm2.keymetrics.io/)
+
+https://www.youtube.com/shorts/cLFZAGTGvPs
+SIGINT, SIGTERM, SIGKILL - What are these signals?
 
 - Q15. What is Middleware in Node.js?  
 - Q16. What is the purpose of Module Exports?  
