@@ -5,10 +5,10 @@
 1. [Execution Context](./Q-1774359808726.md) [X]
 2. [Lexical Environment](./Q-1774359843566.md) [X]
 3. [Call Stack](./Q-1774611504958.md) [X]
-4. [Event Loop](./Q-4.md)
-5. [Task/Callback/Message Queue](./Q-5.md)
-6. [Microtasks vs Macrotasks](./Q-6.md)
-7. [Hoisting](./Q-7.md)
+4. [Event Loop](./Q-1774612253245.md) [X]
+5. [Task/Callback/Message Queue](./Q-1774612295484.md) [X]
+6. [Microtasks vs Macrotasks](./Q-1774612339197.md) [X]
+7. [Hoisting](./Q-1774612382064.md) [X]
 8. [Scopes - Global Scope, Function Scope, Block Scope, Lexical Scope, Scope Chain](./Q-8.md)
 9. [Template Literals & Tagged Templates](./Q-9.md)
 10. [`var`, `let`, `const`](./Q-10.md)
