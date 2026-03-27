@@ -26,7 +26,7 @@
 22. [Pure functions](./Q-25.md)
 23. [Prototype & Prototype Chain](./Q-26.md)
 24. [OOPS - Classes](./Q-27.md)
-25. [Optional chaining operator `?.`](./Q-28.md)
+25. [Optional chaining operator `?.`](./Q-1774611294590.md) [X]
 26. [Nullish coalescing operator `??`](./Q-1774610403602.md) [X]
 27. [About `NaN`](./Q-1774610138593.md) [X]
 28. [About `Infinity` & `-Infinity`](./Q-1774360273121.md) [X]
