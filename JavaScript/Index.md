@@ -9,11 +9,11 @@
 5. [Task/Callback/Message Queue](./Q-1774612295484.md) [X]
 6. [Microtasks vs Macrotasks](./Q-1774612339197.md) [X]
 7. [Hoisting](./Q-1774612382064.md) [X]
-8. [Scopes - Global Scope, Function Scope, Block Scope, Lexical Scope, Scope Chain](./Q-8.md)
-9. [Template Literals & Tagged Templates](./Q-9.md)
-10. [`var`, `let`, `const`](./Q-10.md)
-11. [`this`](./Q-11.md)
-12. [Strict Mode (`'use strict'`)](./Q-12.md)
+8. [Scopes - Global Scope, Function Scope, Block Scope, Lexical Scope, Scope Chain](./Q-1774964987151.md) [X]
+9. [Template Literals & Tagged Templates](./Q-1774965059112.md) [X]
+10. [`var`, `let`, `const`](./Q-1774965095217.md) [X]
+11. [`this`](./Q-1774965130161.md) [X]
+12. [Strict Mode (`'use strict'`)](./Q-1774965157080.md) [X]
 13. [Destructuring](./Q-13.md)
 14. [Spread & Rest](./Q-14.md)
 15. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
