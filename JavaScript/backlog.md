@@ -6,6 +6,64 @@ npm, npx, nvm
 
 semantic versioning, the use of >=, <=, ^, ~ etc. in package.json explained.
 
+## Coding question
+
+What will be the output of the following:
+
+```javascript
+
+for (i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i) , 0);
+}
+
+for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i) , 0);
+}
+
+```
+
+## Coding question
+
+What will be the output of the following:
+
+```javascript
+
+var a = 10;
+
+function abc() {
+    console.log('a', a);
+    // var a = 20;
+    // console.log('a', a);
+}
+
+abc();
+
+```
+
+## Coding question
+
+// Empty this array in one line of code.
+
+```javascript
+
+let numbers = [1, 2, 3];
+
+numbers.length = 0;
+
+console.log(numbers);
+
+```
+
+Write a function to check if a number is an integer without using standard/built-in function.
+
+```javascript
+
+const isInt = (number) => (number * 10) % 10 === 0;
+
+```
+
+Write a function to reverse the array [1, 2, 3].
+
 ## Types of functions in JavaScript
 
 * Normal/regular functions
