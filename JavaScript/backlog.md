@@ -22,28 +22,6 @@ for (let i = 0; i < 3; i++) {
 
 ```
 
-## Coding question
-
-// Empty this array in one line of code.
-
-```javascript
-
-let numbers = [1, 2, 3];
-
-numbers.length = 0;
-
-console.log(numbers);
-
-```
-
-Write a function to check if a number is an integer without using standard/built-in function.
-
-```javascript
-
-const isInt = (number) => (number * 10) % 10 === 0;
-
-```
-
 Write a function to reverse the array [1, 2, 3].
 
 ## Types of functions in JavaScript
