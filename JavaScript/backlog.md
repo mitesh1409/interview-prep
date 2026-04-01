@@ -24,24 +24,6 @@ for (let i = 0; i < 3; i++) {
 
 ## Coding question
 
-What will be the output of the following:
-
-```javascript
-
-var a = 10;
-
-function abc() {
-    console.log('a', a);
-    // var a = 20;
-    // console.log('a', a);
-}
-
-abc();
-
-```
-
-## Coding question
-
 // Empty this array in one line of code.
 
 ```javascript

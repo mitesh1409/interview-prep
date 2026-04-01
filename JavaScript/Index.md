@@ -34,6 +34,7 @@
 30. [Coding Question](./Q-1774355130506.md) [X]
 31. [Coding Question](./Q-1774355330317.md) [X]
 32. [Coding Question](./Q-1774355544775.md) [X]
+33. [Coding Question](./Q-1775039194165.md) [X]
 
 ## Basic
 

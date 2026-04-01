@@ -73,6 +73,10 @@ SIGINT, SIGTERM, SIGKILL - What are these signals?
 - Q24. What is the purpose of the CreateServer() method?  
 - Q25. What are commonly used libraries in Node.js?  
 
+* Rate limiting in Node.js
+* Rate limiting algorithms
+https://docs.arcjet.com/rate-limiting/algorithms
+
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
 ## Basic

@@ -143,6 +143,12 @@ href = origin + pathname + search + hash
 origin = protocol + host
 host = hostname + port
 
+#20
+DDoS Attack
+
 ---
 
 ## MySQL
+
+Updating schema of a table with large data (>= 1 million records) without locking the table for a long time.
+
