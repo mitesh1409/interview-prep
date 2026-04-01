@@ -8,20 +8,6 @@ semantic versioning, the use of >=, <=, ^, ~ etc. in package.json explained.
 
 ## Coding question
 
-What will be the output of the following:
-
-```javascript
-
-for (i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i) , 0);
-}
-
-for (let i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i) , 0);
-}
-
-```
-
 Write a function to reverse the array [1, 2, 3].
 
 ## Types of functions in JavaScript
@@ -34,8 +20,6 @@ Write a function to reverse the array [1, 2, 3].
 * Pure functions
 
 ## Why arrow functions are preferred while writing callbacks?
-
-## this in normal/regular function vs this in arrow function
 
 ## Optional Chaining (`?.`), Nullish Coalescing (`??`), Logical OR (`||`) - take notes from react-masters repo
 

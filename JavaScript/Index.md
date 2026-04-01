@@ -16,7 +16,7 @@
 12. [`this` Binding: Regular Functions vs Arrow Functions](./Q-1774975575740.md) [X]
 13. [Strict Mode (`'use strict'`)](./Q-1774965157080.md) [X]
 14. [Destructuring](./Q-1774977253433.md) [X]
-15. [Spread & Rest](./Q-14.md)
+15. [Spread & Rest](./Q-1775043288403.md) [X]
 16. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 17. [Shallow Copy vs Deep Copy](./Q-16.md)
 18. [Equality Operators: `==` vs `===`](./Q-19.md)
@@ -37,6 +37,7 @@
 33. [Coding Question](./Q-1775039194165.md) [X]
 34. [Coding Question](./Q-1775040136333.md) [X]
 35. [Coding Question](./Q-1775040480135.md) [X]
+36. [Coding Question](./Q-1775041228340.md) [X]
 
 ## Basic
 
