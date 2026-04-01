@@ -19,7 +19,7 @@
 15. [Spread & Rest](./Q-1775043288403.md) [X]
 16. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 17. [Shallow Copy vs Deep Copy](./Q-16.md)
-18. [Equality Operators: `==` vs `===`](./Q-19.md)
+18. [Equality Operators: `==` vs `===`](./Q-1775044163109.md) [X]
 19. [Memoization](./Q-21.md)
 20. [Functions as first class citizens in JavaScript](./Q-22.md)
 21. [Function expression, Function statement, Function Declaration](./Q-23.md)
