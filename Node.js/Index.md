@@ -56,6 +56,16 @@
 
 Backlog  
 
+```javascript
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
+// And then we can use require function to import modules which don't support ESM.
+
+```
+
+
 * worker threads vs cluster vs child_process comparison
 * How do you design an observability stack in AWS for a large microservices system?
 * What is PM2 and how does it help in managing Node.js applications in production?
