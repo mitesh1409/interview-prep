@@ -63,9 +63,6 @@ https://www.youtube.com/watch?v=oKQcDjxsOvg
 Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix
 https://www.youtube.com/watch?v=IPdSN7QjbGU
 
-00:10:54 What is worker threads in Node js and how do they improve performance
-00:11:11 How does Node js handle memory management and garbage collection
-00:11:33 What is clustering in Node.js and when should it be used
 00:11:51 What is a microservices architecture and how can Node js be used to built it
 00:12:14 What are the best practices for optimizing a Node js application
 00:12:51 How do you prevent memory leaks in a long running Node js process
