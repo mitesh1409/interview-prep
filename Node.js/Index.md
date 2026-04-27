@@ -37,22 +37,49 @@
 33. [What happens if an uncaught exception occurs? OR The purpose of using global error handlers like `process.on('uncaughtException')`](./Q-1772174646207.md)
 34. [Middleware in Express.js](./Q-1772178692962.md)
 35. [What are Streams in Node.js?](./Q-1772178705973.md)
-36. [How can you secure a Node.js application?](./Q-34.md)
-37. [What is Buffer in Node.js?](./Q-35.md)
-38. [How do you handle large file uploads efficiently in Node.js?](./Q-36.md)
-39. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-37.md)
-40. [How would you implement caching in a Node.js application to improve performance?](./Q-38.md)
-41. [How would you manage environment variables in a Node.js application?](./Q-39.md)
-42. [How would you handle rate limiting in a Node.js API?](./Q-40.md)
-43. [What are worker threads in Node.js, and when would you use them?](./Q-41.md)
-44. [How does Node.js handle memory management and garbage collection?](./Q-42.md)
-45. [What is clustering in Node.js and when should it be used?](./Q-43.md)
-46. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-44.md)
-47. [What are the best practices for optimizing the performance of a Node.js application?](./Q-45.md)
-48. [How do you prevent memory leaks in a Node.js application?](./Q-46.md)
-49. [How would you implement logging in a Node.js application?](./Q-47.md)
+36. [How can you secure a Node.js application?](./Q-1777296324889.md)
+37. [What is Buffer in Node.js?](./Q-1777296381727.md)
+38. [How do you handle large file uploads efficiently in Node.js?](./Q-1777296422940.md)
+39. [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
+40. [How would you implement caching in a Node.js application to improve performance?](./Q-1777296517761.md)
+41. [How would you manage environment variables in a Node.js application?](./Q-1777296618988.md)
+42. [How would you handle rate limiting in a Node.js API?](./Q-1777296664809.md)
+43. [What are worker threads in Node.js, and when would you use them?](./Q-1777296713103.md)
+44. [How does Node.js handle memory management and garbage collection?](./Q-1777296760934.md)
+45. [What is clustering in Node.js and when should it be used?](./Q-1777296825038.md)
+46. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-1777296872515.md)
+47. [What are the best practices for optimizing the performance of a Node.js application?](./Q-1777296920432.md)
+48. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
+49. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
 50. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
 
+---
+
+5 Coding Interview Tips From A Senior Engineer
+https://www.youtube.com/watch?v=oKQcDjxsOvg
+
+---
+
+Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix
+https://www.youtube.com/watch?v=IPdSN7QjbGU
+
+00:10:54 What is worker threads in Node js and how do they improve performance
+00:11:11 How does Node js handle memory management and garbage collection
+00:11:33 What is clustering in Node.js and when should it be used
+00:11:51 What is a microservices architecture and how can Node js be used to built it
+00:12:14 What are the best practices for optimizing a Node js application
+00:12:51 How do you prevent memory leaks in a long running Node js process
+00:13:18 What will be the output of the following code
+00:13:46 How would you implement logging in Node js application
+00:14:10 How do you implement authentication in Node.js
+00:14:27 How do you design an observability stack in AWS for a large microservices system
+
+---
+
+Solve 30 Backend Questions with me in 2 hrs | Master Backend Interviews
+https://www.youtube.com/watch?v=fuFzVlhtybo
+
+---
 
 Backlog  
 
@@ -88,6 +115,49 @@ SIGINT, SIGTERM, SIGKILL - What are these signals?
 https://docs.arcjet.com/rate-limiting/algorithms
 
 https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
+
+---
+
+Top 25 Node.js Interview Questions to Ace Your BackEnd Interview | NodeJS Interview | Intellipaat
+https://www.youtube.com/watch?v=ruwx8R2nXyI
+
+👨‍💻 Node JS Interview Questions for Freshers:
+00:50 - Q1. What is Node.js?  
+02:21 - Q2. What is the difference between Node.js and JavaScript?  
+04:22 - Q3. Can you explain the working of Node.js?  
+07:25 - Q4. Why is Node.js single-threaded?  
+08:49 - Q5. Why is Node.js so popular these days?  
+10:02 - Q6. How to write "Hello World" using Node.js?  
+11:20 - Q7. What is synchronous and asynchronous programming?  
+15:01 - Q8. How does Node.js achieve asynchronous programming?  
+20:09 - Q9. What is the event loop in Node.js, and how does it work?  
+21:11 - Q10. What is callback hell, and what are the methods to avoid it?  
+
+👨‍💻 Intermediate Level Node JS Questions For Interview:
+23:30 - Q11. What are promises in Node.js?  
+25:30 - Q12. How can you use Async/Await in Node.js?  
+26:45 - Q13. What is Package.json?  
+28:30 - Q14. What are 5 built-in modules in Node.js?  
+30:02 - Q15. What is Middleware in Node.js?  
+31:54 - Q16. What is the purpose of Module Exports?  
+33:52 - Q17. Express.js vs Node.js.  
+37:00 - Q18. What is Event-Driven Programming?  
+40:00 - Q19. What is the role of the Event Module?  
+41:19 - Q20. What is the role of the Buffer Class in Node.js?  
+
+👨‍💻 Node JS Interview Questions for Experienced:
+43:02 - Q21. SetImmediate() vs SetTimeout().  
+44:22 - Q22. What is Node.js Web Application Architecture?  
+45:25 - Q23. What are the types of Streams in Node.js?  
+46:34 - Q24. What is the purpose of the CreateServer() method?  
+48:20 - Q25. What are commonly used libraries in Node.js?  
+
+---
+
+Top 15 Node JS Interview Questions And Answers 2026 | Node JS Backend Interview | Simplilearn
+https://www.youtube.com/watch?v=wlanYolAQP8
+
+---
 
 ## Basic
 

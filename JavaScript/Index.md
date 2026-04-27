@@ -39,6 +39,18 @@
 35. [Coding Question](./Q-1775040480135.md) [X]
 36. [Coding Question](./Q-1775041228340.md) [X]
 
+---
+
+JavaScript HARD Interview Questions | Part 1
+https://www.youtube.com/watch?v=7_WxOdeCv9k
+
+---
+
+Top 10 JavaScript Interview Questions EXPLAINED! | Tanay Pratap Hindi
+https://www.youtube.com/watch?v=tOo9c6SK_do
+
+---
+
 ## Basic
 
 ## Intermediate

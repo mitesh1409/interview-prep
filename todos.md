@@ -1,4 +1,34 @@
 
+Node JS Interview Questions 🔥 NodeJS tutorial for beginners
+https://www.youtube.com/watch?v=iwHC9GfQgow
+
+Topics
+
+- Database design - schema, fields, mongoose
+- Your contribution in your project
+- Node red?
+- operational error Vs programming error
+  An operational error occurs naturally and is part of the application flow,
+  while programming errors are referred to as bugs that are caused by developers.
+- Is Node.js single threaded or multi threaded?
+  If single threaded then how does it handle multiple tasks all at once.
+- How to obtain the IP address of the user in Node.js?
+  We use `req.connection.remoteAddress` to get the IP address.
+  The problem with this approach is proxy servers.
+  In case of proxy servers, `req.connection.remoteAddress` might not be the actual IP address 
+  of the client.
+  If your application is behind a proxy, you might need to use other headers like `X-Forwarded-For` to get the actual client IP.
+  `const clientIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress`
+- How to change/edit file on the server side?
+- Load balancer
+- HTTP Status Codes and their meaning/usage
+
+
+https://www.youtube.com/playlist?list=PLzjZaW71kMwScTRKzoasdyB1sX-a9EbFp
+
+---
+
+
 ## JavaScript
 
 1.  IIFE
