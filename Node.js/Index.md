@@ -69,13 +69,10 @@ https://www.youtube.com/watch?v=oKQcDjxsOvg
 Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix
 https://www.youtube.com/watch?v=IPdSN7QjbGU
 
-00:11:51 What is a microservices architecture and how can Node js be used to built it
-00:12:14 What are the best practices for optimizing a Node js application
-00:12:51 How do you prevent memory leaks in a long running Node js process
-00:13:18 What will be the output of the following code
-00:13:46 How would you implement logging in Node js application
-00:14:10 How do you implement authentication in Node.js
-00:14:27 How do you design an observability stack in AWS for a large microservices system
+00:12:51 How do you prevent memory leaks in a long running Node js process  
+00:13:18 What will be the output of the following code  
+00:14:10 How do you implement authentication in Node.js  
+00:14:27 How do you design an observability stack in AWS for a large microservices system  
 
 ---
 
