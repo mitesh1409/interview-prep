@@ -52,6 +52,7 @@
 48. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
 49. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
 50. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
+51. [What will be the output of the following code](./Q-1777904455906.md)
 
 ---
 
@@ -69,8 +70,6 @@ https://www.youtube.com/watch?v=oKQcDjxsOvg
 Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix
 https://www.youtube.com/watch?v=IPdSN7QjbGU
 
-00:12:51 How do you prevent memory leaks in a long running Node js process  
-00:13:18 What will be the output of the following code  
 00:14:10 How do you implement authentication in Node.js  
 00:14:27 How do you design an observability stack in AWS for a large microservices system  
 
