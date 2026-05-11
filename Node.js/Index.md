@@ -53,25 +53,18 @@
 49. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
 50. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
 51. [What will be the output of the following code](./Q-1777904455906.md)
+52. [Authentication in Node.js](./Q-1778480759090.md)
+53. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
 
 ---
 
 Proxy  
 Reverse Proxy  
 
-
 ---
 
 5 Coding Interview Tips From A Senior Engineer
 https://www.youtube.com/watch?v=oKQcDjxsOvg
-
----
-
-Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix
-https://www.youtube.com/watch?v=IPdSN7QjbGU
-
-00:14:10 How do you implement authentication in Node.js  
-00:14:27 How do you design an observability stack in AWS for a large microservices system  
 
 ---
 
@@ -90,7 +83,6 @@ const require = createRequire(import.meta.url);
 // And then we can use require function to import modules which don't support ESM.
 
 ```
-
 
 * worker threads vs cluster vs child_process comparison
 * How do you design an observability stack in AWS for a large microservices system?
@@ -163,3 +155,9 @@ https://www.youtube.com/watch?v=wlanYolAQP8
 ## Intermediate
 
 ## Advanced
+
+---
+
+## References
+
+* [Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix](https://www.youtube.com/watch?v=IPdSN7QjbGU)
