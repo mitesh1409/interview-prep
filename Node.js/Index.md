@@ -49,16 +49,17 @@
 45. [What are worker threads in Node.js, and when would you use them?](./Q-1777296713103.md)
 46. [What is clustering in Node.js and when should it be used?](./Q-1777296825038.md)
 47. [What is the difference between cluster and worker_threads in Node.js?](./Q-1778571871700.md)
-48. [How does Node.js handle memory management and garbage collection?](./Q-1777296760934.md)
-49. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-1777296872515.md)
-50. [What are the best practices for optimizing the performance of a Node.js application?](./Q-1777296920432.md)
-51. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
-52. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
-53. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
-54. [What will be the output of the following code](./Q-1777904455906.md)
-55. [Authentication in Node.js](./Q-1778480759090.md)
-56. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
-57. [What are commonly used libraries in Node.js?](./Q-1778584189929.md)
+48. [What are child processes? Difference between clusters and child processes.](./Q-1778586424379.md)
+49. [How does Node.js handle memory management and garbage collection?](./Q-1777296760934.md)
+50. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-1777296872515.md)
+51. [What are the best practices for optimizing the performance of a Node.js application?](./Q-1777296920432.md)
+52. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
+53. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
+54. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
+55. [What will be the output of the following code](./Q-1777904455906.md)
+56. [Authentication in Node.js](./Q-1778480759090.md)
+57. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
+58. [What are commonly used libraries in Node.js?](./Q-1778584189929.md)
 
 ---
 
@@ -88,20 +89,13 @@ const require = createRequire(import.meta.url);
 
 ```
 
-* worker threads vs cluster vs child_process comparison
-* How do you design an observability stack in AWS for a large microservices system?
 * What is PM2 and how does it help in managing Node.js applications in production?
 [PM2 - Advanced Production Process Manager for Node.js](https://pm2.keymetrics.io/)
 
-https://www.youtube.com/shorts/cLFZAGTGvPs
-SIGINT, SIGTERM, SIGKILL - What are these signals?
+---
 
-
-* Rate limiting in Node.js
-* Rate limiting algorithms
-https://docs.arcjet.com/rate-limiting/algorithms
-
-https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
+Node.js - Top 100 Interview Questions and Answers  
+https://www.youtube.com/watch?v=Nz-nPR5YJbw  
 
 ---
 
