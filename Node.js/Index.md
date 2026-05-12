@@ -101,11 +101,6 @@ https://www.youtube.com/watch?v=Nz-nPR5YJbw
 
 ---
 
-Top 15 Node JS Interview Questions And Answers 2026 | Node JS Backend Interview | Simplilearn
-https://www.youtube.com/watch?v=wlanYolAQP8
-
----
-
 ## Basic
 
 ## Intermediate
