@@ -58,6 +58,7 @@
 54. [What will be the output of the following code](./Q-1777904455906.md)
 55. [Authentication in Node.js](./Q-1778480759090.md)
 56. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
+57. [What are commonly used libraries in Node.js?](./Q-1778584189929.md)
 
 
 
@@ -117,42 +118,6 @@ https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=997s
 
 ---
 
-Top 25 Node.js Interview Questions to Ace Your BackEnd Interview | NodeJS Interview | Intellipaat
-https://www.youtube.com/watch?v=ruwx8R2nXyI
-
-👨‍💻 Node JS Interview Questions for Freshers:
-00:50 - Q1. What is Node.js?  
-02:21 - Q2. What is the difference between Node.js and JavaScript?  
-04:22 - Q3. Can you explain the working of Node.js?  
-07:25 - Q4. Why is Node.js single-threaded?  
-08:49 - Q5. Why is Node.js so popular these days?  
-10:02 - Q6. How to write "Hello World" using Node.js?  
-11:20 - Q7. What is synchronous and asynchronous programming?  
-15:01 - Q8. How does Node.js achieve asynchronous programming?  
-20:09 - Q9. What is the event loop in Node.js, and how does it work?  
-21:11 - Q10. What is callback hell, and what are the methods to avoid it?  
-
-👨‍💻 Intermediate Level Node JS Questions For Interview:
-23:30 - Q11. What are promises in Node.js?  
-25:30 - Q12. How can you use Async/Await in Node.js?  
-26:45 - Q13. What is Package.json?  
-28:30 - Q14. What are 5 built-in modules in Node.js?  
-30:02 - Q15. What is Middleware in Node.js?  
-31:54 - Q16. What is the purpose of Module Exports?  
-33:52 - Q17. Express.js vs Node.js.  
-37:00 - Q18. What is Event-Driven Programming?  
-40:00 - Q19. What is the role of the Event Module?  
-41:19 - Q20. What is the role of the Buffer Class in Node.js?  
-
-👨‍💻 Node JS Interview Questions for Experienced:
-43:02 - Q21. SetImmediate() vs SetTimeout().  
-44:22 - Q22. What is Node.js Web Application Architecture?  
-45:25 - Q23. What are the types of Streams in Node.js?  
-46:34 - Q24. What is the purpose of the CreateServer() method?  
-48:20 - Q25. What are commonly used libraries in Node.js?  
-
----
-
 Top 15 Node JS Interview Questions And Answers 2026 | Node JS Backend Interview | Simplilearn
 https://www.youtube.com/watch?v=wlanYolAQP8
 
@@ -170,3 +135,4 @@ https://www.youtube.com/watch?v=wlanYolAQP8
 
 * [Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix](https://www.youtube.com/watch?v=IPdSN7QjbGU)
 * [Top 5 MOST Difficult Node.js Interview Questions (With Answers & Explanations!) #nodejsinterview](https://www.youtube.com/watch?v=Ofn1du_mzRg)
+* [Top 25 Node.js Interview Questions to Ace Your BackEnd Interview | NodeJS Interview | Intellipaat](https://www.youtube.com/watch?v=ruwx8R2nXyI)
