@@ -60,11 +60,6 @@
 56. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
 57. [What are commonly used libraries in Node.js?](./Q-1778584189929.md)
 
-
-
-
-
-
 ---
 
 Proxy  
@@ -101,14 +96,6 @@ const require = createRequire(import.meta.url);
 https://www.youtube.com/shorts/cLFZAGTGvPs
 SIGINT, SIGTERM, SIGKILL - What are these signals?
 
-- Q15. What is Middleware in Node.js?  
-- Q16. What is the purpose of Module Exports?  
-- Q19. What is the role of the Event Module?  
-- Q20. What is the role of the Buffer Class in Node.js?  
-- Q21. SetImmediate() vs SetTimeout().  
-- Q23. What are the types of Streams in Node.js?  
-- Q24. What is the purpose of the CreateServer() method?  
-- Q25. What are commonly used libraries in Node.js?  
 
 * Rate limiting in Node.js
 * Rate limiting algorithms
@@ -128,11 +115,3 @@ https://www.youtube.com/watch?v=wlanYolAQP8
 ## Intermediate
 
 ## Advanced
-
----
-
-## References
-
-* [Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix](https://www.youtube.com/watch?v=IPdSN7QjbGU)
-* [Top 5 MOST Difficult Node.js Interview Questions (With Answers & Explanations!) #nodejsinterview](https://www.youtube.com/watch?v=Ofn1du_mzRg)
-* [Top 25 Node.js Interview Questions to Ace Your BackEnd Interview | NodeJS Interview | Intellipaat](https://www.youtube.com/watch?v=ruwx8R2nXyI)
