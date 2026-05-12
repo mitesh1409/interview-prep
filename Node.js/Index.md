@@ -25,7 +25,7 @@
 21. [Top 5 built-in modules in Node.js](./Q-1771585192911.md)
 22. [Function vs Event](./Q-1771585285562.md)
 23. [Order of Execution of a Node.js Application](./Q-1771585333788.md)
-24. [Explain `process.nextTick` in Node.js](./Q-1771585379085.md)
+24. [Explain `process.nextTick()` in Node.js OR What is the difference between `process.nextTick()`, `setImmediate()` and `setTimeout()`?](./Q-1771585379085.md)
 25. [CommonJS Module vs ECMAScript Module in Node.js](./Q-1771585438788.md)
 26. [How does Node.js handles asynchronous operations? OR Callbacks, Promises, async-await in Node.js](./Q-1771585486291.md)
 27. [How do you handle errors in asynchronous code? Provide examples.](./Q-1771601217168.md)
@@ -46,15 +46,16 @@
 42. [How would you handle rate limiting in a Node.js API?](./Q-1777296664809.md)
 43. [What are worker threads in Node.js, and when would you use them?](./Q-1777296713103.md)
 44. [What is clustering in Node.js and when should it be used?](./Q-1777296825038.md)
-45. [How does Node.js handle memory management and garbage collection?](./Q-1777296760934.md)
-46. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-1777296872515.md)
-47. [What are the best practices for optimizing the performance of a Node.js application?](./Q-1777296920432.md)
-48. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
-49. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
-50. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
-51. [What will be the output of the following code](./Q-1777904455906.md)
-52. [Authentication in Node.js](./Q-1778480759090.md)
-53. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
+45. [What is the difference between cluster and worker_threads in Node.js?](./Q-1778571871700.md)
+46. [How does Node.js handle memory management and garbage collection?](./Q-1777296760934.md)
+47. [What is the Microservices Architecture, and how can we use Node.js to build it?](./Q-1777296872515.md)
+48. [What are the best practices for optimizing the performance of a Node.js application?](./Q-1777296920432.md)
+49. [How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
+50. [How would you implement logging in a Node.js application?](./Q-1777296985334.md)
+51. [SIGINT, SIGTERM, SIGKILL - What are these signals?](./Q-1774187357682.md)
+52. [What will be the output of the following code](./Q-1777904455906.md)
+53. [Authentication in Node.js](./Q-1778480759090.md)
+54. [How do you design an observability stack in AWS for a large microservices system](./Q-1778480798716.md)
 
 ---
 
@@ -161,3 +162,4 @@ https://www.youtube.com/watch?v=wlanYolAQP8
 ## References
 
 * [Node JS Interview Questions 2026 | Node.js Interview Questions and Answers | MindMajix](https://www.youtube.com/watch?v=IPdSN7QjbGU)
+* [Top 5 MOST Difficult Node.js Interview Questions (With Answers & Explanations!) #nodejsinterview](https://www.youtube.com/watch?v=Ofn1du_mzRg)
