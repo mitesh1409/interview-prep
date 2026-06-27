@@ -50,6 +50,23 @@ https://www.youtube.com/watch?v=7_WxOdeCv9k
 Top 10 JavaScript Interview Questions EXPLAINED! | Tanay Pratap Hindi
 https://www.youtube.com/watch?v=tOo9c6SK_do
 
+1. setTimeout, Event Loop, Promises etc.
+https://github.com/mitesh1409/interview-prep/blob/main/Node.js/Q-1778580799378.md
+https://github.com/mitesh1409/interview-prep/blob/main/Node.js/Q-1771584411283.md
+
+2. Placement of JS files
+Where to place JS files in your application?
+Inside head tag, at the end of the body tag, using async, using defer etc.
+Understand the critical rendering path.
+When browser renders a page which things are blocking and which are non-blocking?
+Understand about Delay Load, Defer, Async etc.
+
+3. let, const, var - differences, when to use what?
+
+4. Questions around Closure
+
+
+
 ---
 
 ## Basic
