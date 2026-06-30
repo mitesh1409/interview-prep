@@ -66,6 +66,14 @@
 
 ---
 
+@todo
+
+* Explore -> Promises/async-await in browsers vs Promises/async-await in Node.js
+
+For Q #24 [Order of Execution of a Node.js Application](./Q-1771585333788.md)
+
+---
+
 Proxy  
 Reverse Proxy  
 
