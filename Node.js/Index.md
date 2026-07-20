@@ -68,6 +68,23 @@
 
 @todo
 
+In case when we have multiple modules grouped together into one big module,  
+for example - lets say we have a "finance" module that contains the following modules:  
+* loan
+* insurance
+* savings
+* investments
+* tax
+etc.
+
+How do we organise it?  
+How to import/export "finance" module?  
+Can we use index.js in such scenario? or is there a way without using index.js?  
+
+---
+
+@todo
+
 https://github.com/mitesh1409/nodejs-master/blob/main/ZTM%20Complete%20Node.js%20Developer%20in%202023/1784541960477.md
 
 ---
