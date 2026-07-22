@@ -68,6 +68,71 @@
 
 @todo
 
+General concept of rate limiting - what, why, how?  
+
+Rate limiting algorithms  
+https://docs.arcjet.com/rate-limiting/algorithms  
+
+How to do it in Nest.js project?  
+
+Hands-on examples for Express  
+
+Hands-on examples for Nest.js  
+
+Is there a way to bypass/whitelist specific IP from rate limiting?
+
+---
+
+@todo
+
+Same Origin Policy of the Browser.
+
+Examples
+
+---
+
+@todo
+
+CORS (Cross Origin Resource Sharing)
+
+response header "Access-Control-Allow-Origin"
+
+Examples
+
+References:
+
+* [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
+* [Whitelisting](https://en.wikipedia.org/wiki/Whitelist)
+
+---
+
+@todo
+
+[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+
+---
+
+@todo
+
+[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+
+---
+
+@todo
+
+Refer [How do you handle large file uploads efficiently in Node.js?](./Q-1777296422940.md)
+
+large file uploads
+
+Hands-on example  
+* Large file upload on the server disk
+* Large file upload directly on the cloud storage (S3, GCS)
+
+---
+
+@todo
+
 In case when we have multiple modules grouped together into one big module,  
 for example - lets say we have a "finance" module that contains the following modules:  
 * loan
