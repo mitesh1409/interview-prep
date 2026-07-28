@@ -28,6 +28,15 @@ https://www.youtube.com/playlist?list=PLzjZaW71kMwScTRKzoasdyB1sX-a9EbFp
 
 ---
 
+[How do you prevent memory leaks in a Node.js application?](./Q-1777296961824.md)
+
+Explore more about the following with a hands-on example:
+
+8. **Use Weak References**  
+   Utilize `WeakMap` and `WeakSet` for objects that should not prevent garbage collection. This allows the garbage collector to reclaim memory when there are no other references to the object.
+
+---
+
 
 ## JavaScript
 
