@@ -42,6 +42,10 @@
 
 ---
 
+Learn about `eval()`
+
+---
+
 JavaScript HARD Interview Questions | Part 1
 https://www.youtube.com/watch?v=7_WxOdeCv9k
 
