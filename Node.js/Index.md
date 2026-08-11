@@ -69,6 +69,19 @@
 
 ---
 
+@todo
+
+File download endpoints — pipe directly to `res`
+
+```javascript
+app.get('/download', (req, res) => {
+  const stream = fs.createReadStream('largefile.zip');
+  stream.pipe(res); // stream directly to response — memory stays low
+});
+```
+
+---
+
 https://www.youtube.com/watch?v=_eJ6KAb56Gw
 
 Check the example.
