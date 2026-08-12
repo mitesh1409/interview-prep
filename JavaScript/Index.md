@@ -29,8 +29,8 @@
 25. [OOPS - Classes](./Q-27.md)
 26. [Optional chaining operator `?.`](./Q-1774611294590.md) [X]
 27. [Nullish coalescing operator `??`](./Q-1774610403602.md) [X]
-28. [About `NaN`](./Q-1774610138593.md) [X]
-29. [About `Infinity` & `-Infinity`](./Q-1774360273121.md) [X]
+28. [About `NaN`](./Q-1774610138593.md) [*]
+29. [About `Infinity` & `-Infinity`](./Q-1774360273121.md) [*]
 30. [Coding Question](./Q-1774355130506.md) [*]
 31. [Coding Question](./Q-1774355330317.md) [*]
 32. [Coding Question](./Q-1774355544775.md) [*]
