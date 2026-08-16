@@ -71,6 +71,27 @@
 
 @todo
 
+Promises in Node.js vs Promises in Browser
+
+---
+
+@todo
+
+How do you handle file system operations in Node.js?
+
+Node.js has a built-in `fs` module that enables us to handle file system operations.  
+
+Cover the following topics:  
+
+* Synchronous way
+* Asynchronous way
+* Using Streams to handle large files
+* Reading/writing all at once, without using streams
+
+---
+
+@todo
+
 File download endpoints — pipe directly to `res`
 
 ```javascript
