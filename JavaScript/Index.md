@@ -2,7 +2,7 @@
 
 ## Index
 
-1. [Execution Context](./Q-1774359808726.md) [X]
+1. [Execution Context](./Q-1774359808726.md) [*]
 2. [Lexical Environment](./Q-1774359843566.md) [X]
 3. [Call Stack](./Q-1774611504958.md) [X]
 4. [Event Loop](./Q-1774612253245.md) [X]
@@ -19,7 +19,7 @@
 15. [Spread & Rest](./Q-1775043288403.md) [X]
 16. [Modules, `import`, `export`, default vs named exports](./Q-15.md)
 17. [Shallow Copy vs Deep Copy](./Q-16.md)
-18. [Equality Operators: `==` vs `===`](./Q-1775044163109.md) [X]
+18. [Equality Operators: `==` vs `===`](./Q-1775044163109.md) [*]
 19. [Memoization](./Q-21.md)
 20. [Functions as first class citizens in JavaScript](./Q-22.md)
 21. [Function expression, Function statement, Function Declaration](./Q-23.md)
@@ -27,8 +27,8 @@
 23. [Pure functions](./Q-25.md)
 24. [Prototype & Prototype Chain](./Q-26.md)
 25. [OOPS - Classes](./Q-27.md)
-26. [Optional chaining operator `?.`](./Q-1774611294590.md) [X]
-27. [Nullish coalescing operator `??`](./Q-1774610403602.md) [X]
+26. [Optional chaining operator `?.`](./Q-1774611294590.md) [*]
+27. [Nullish coalescing operator `??`](./Q-1774610403602.md) [*]
 28. [About `NaN`](./Q-1774610138593.md) [*]
 29. [About `Infinity` & `-Infinity`](./Q-1774360273121.md) [*]
 30. [Coding Question](./Q-1774355130506.md) [*]
@@ -65,12 +65,51 @@ Inside head tag, at the end of the body tag, using async, using defer etc.
 Understand the critical rendering path.
 When browser renders a page which things are blocking and which are non-blocking?
 Understand about Delay Load, Defer, Async etc.
+Head, Body, End/Footer, Delay Load, Defer, Async, Critical Rendering Path, Blocking vs Non-blocking, DOMContentLoaded, Load Event, etc.
 
 3. let, const, var - differences, when to use what?
 
+Learn about errors
+Block scope, Function scope, Global scope, Hoisting, TDZ
+
 4. Questions around Closure
 
+Scope chain, Lexical scope, Closure, Garbage collection, Memory leaks, etc.
 
+Debugging closure related issues, memory leaks, etc.
+
+5. Questions on Functional Programming
+
+Higher order functions, Pure functions, Immutability, Recursion, Memoization, etc.
+Polyfill, Can you write your own polyfill?
+map, filter, reduce, forEach, etc.
+Compose, Pipe, Currying, Partial application, etc.
+
+Examples of functional programming in JS, how to use them, when to use them, etc.
+
+Pure functions are better for testing, debugging, and maintainability of code.
+
+6. Questions Regarding `this`
+
+7. Questions on Frameworks
+
+React, Angular, Vue, Svelte, etc.
+Next.js, Nuxt.js, Remix, Astro, etc.
+Gatsby, Eleventy, etc.
+
+SSG, SSR, SPA, ISR, CSR, etc.
+
+8. Prototypical Inheritance
+
+9. Callbacks, Promises, Async/Await, Event Loop, Microtasks, Macrotasks, etc.
+
+Parallel requests
+Sub sequential requests
+Exit from a callback
+Promise implementation
+State management in a promise
+
+10. Debouncing, Throttling, and Lazy Loading
 
 ---
 
