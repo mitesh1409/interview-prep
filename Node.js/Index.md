@@ -71,6 +71,14 @@
 
 @todo
 
+[Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
+
+Need to revisit this question and prepare this generally such that it can be applied to any backend technology (Node.js, Python, PHP etc.) or cloud platform (AWS, Azure etc.).
+
+---
+
+@todo
+
 Promises in Node.js vs Promises in Browser
 
 ---
