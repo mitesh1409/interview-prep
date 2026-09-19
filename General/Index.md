@@ -24,8 +24,10 @@ What are REST APIs? REST API guidelines.
 
 #3  
 ISP is one of the five SOLID principles of object-oriented design, similar to the "High Cohesion Principle" of GRASP. Beyond object-oriented design, ISP is also a key principle in the design of distributed systems in general and one of the six IDEALS principles for microservice design.  
+
 Explore about GRASP.
 
 #4  
 ISP is one of the five SOLID principles of object-oriented design, similar to the "High Cohesion Principle" of GRASP. Beyond object-oriented design, ISP is also a key principle in the design of distributed systems in general and one of the six IDEALS principles for microservice design.  
+
 Explore about IDEALS - six IDEALS principles for microservice design.
