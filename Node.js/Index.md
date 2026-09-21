@@ -65,7 +65,13 @@
 61. [Why `await` inside the loop is a bad idea? Is there any other way we can write/execute multiple `await` statements?](./Q-1778588482249.md)
 62. [What happens if you call `res.end()` twice in an HTTP server?](./Q-1778590525235.md)
 63. [`import.meta.url`](./Q-1782751207664.md)
-64. [`fs.readFile()` vs `fs.readFileSync()` vs `fs.createReadStream()`](./Q-1786451079879.md)
+64. [`fs.readFile()` vs `fs.readFileSync()` vs `fs.createReadStream()` OR How do you handle file system operations in Node.js?](./Q-1786451079879.md)
+65. [File download endpoint for large file](./Q-1789998712358.md)
+66. [Promises/async-await in browsers vs Promises/async-await in Node.js](./Q-1789997615120.md)
+
+---
+
+## Backlog
 
 ---
 
@@ -82,44 +88,6 @@ Do practical example of this, check all the listed scenarios.
 [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
 
 Need to revisit this question and prepare this generally such that it can be applied to any backend technology (Node.js, Python, PHP etc.) or cloud platform (AWS, Azure etc.).
-
----
-
-@todo
-
-Promises in Node.js vs Promises in Browser  
-
-Explore -> Promises/async-await in browsers vs Promises/async-await in Node.js  
-
-For [Order of Execution of a Node.js Application](./Q-1771585333788.md)
-
----
-
-@todo
-
-How do you handle file system operations in Node.js?
-
-Node.js has a built-in `fs` module that enables us to handle file system operations.  
-
-Cover the following topics:  
-
-* Synchronous way
-* Asynchronous way
-* Using Streams to handle large files
-* Reading/writing all at once, without using streams
-
----
-
-@todo
-
-File download endpoints — pipe directly to `res`
-
-```javascript
-app.get('/download', (req, res) => {
-  const stream = fs.createReadStream('largefile.zip');
-  stream.pipe(res); // stream directly to response — memory stays low
-});
-```
 
 ---
 
@@ -211,19 +179,6 @@ References:
 
 @todo
 
-[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-
-
----
-
-@todo
-
-[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
-
----
-
-@todo
-
 Refer [How do you handle large file uploads efficiently in Node.js?](./Q-1777296422940.md)
 
 large file uploads
@@ -251,35 +206,6 @@ Can we use index.js in such scenario? or is there a way without using index.js?
 
 ---
 
-@todo
-
-https://github.com/mitesh1409/nodejs-master/blob/main/ZTM%20Complete%20Node.js%20Developer%20in%202023/1784541960477.md
-
----
-
-@todo
-
-https://github.com/mitesh1409/nodejs-master/blob/main/ZTM%20Complete%20Node.js%20Developer%20in%202023/1784549020530.md
-
----
-
-Proxy  
-Reverse Proxy  
-
----
-
-5 Coding Interview Tips From A Senior Engineer
-https://www.youtube.com/watch?v=oKQcDjxsOvg
-
----
-
-Solve 30 Backend Questions with me in 2 hrs | Master Backend Interviews
-https://www.youtube.com/watch?v=fuFzVlhtybo
-
----
-
-Backlog  
-
 ```javascript
 import { createRequire } from 'module';
 
@@ -291,6 +217,11 @@ const require = createRequire(import.meta.url);
 
 * What is PM2 and how does it help in managing Node.js applications in production?
 [PM2 - Advanced Production Process Manager for Node.js](https://pm2.keymetrics.io/)
+
+---
+
+Solve 30 Backend Questions with me in 2 hrs | Master Backend Interviews  
+https://www.youtube.com/watch?v=fuFzVlhtybo
 
 ---
 

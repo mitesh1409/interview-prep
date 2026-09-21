@@ -19,15 +19,46 @@ How would you design APIs for your back-end?
 #1  
 What are REST APIs? REST API guidelines.
 
+---
+
 #2  
 [The Twelve-Factor App](https://12factor.net/)
+
+---
 
 #3  
 ISP is one of the five SOLID principles of object-oriented design, similar to the "High Cohesion Principle" of GRASP. Beyond object-oriented design, ISP is also a key principle in the design of distributed systems in general and one of the six IDEALS principles for microservice design.  
 
 Explore about GRASP.
 
+---
+
 #4  
 ISP is one of the five SOLID principles of object-oriented design, similar to the "High Cohesion Principle" of GRASP. Beyond object-oriented design, ISP is also a key principle in the design of distributed systems in general and one of the six IDEALS principles for microservice design.  
 
 Explore about IDEALS - six IDEALS principles for microservice design.
+
+---
+
+#5  
+
+[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+---
+
+#6  
+
+[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+
+---
+
+#7  
+Proxy  
+Reverse Proxy  
+
+---
+
+#8  
+
+5 Coding Interview Tips From A Senior Engineer
+https://www.youtube.com/watch?v=oKQcDjxsOvg
