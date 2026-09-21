@@ -71,6 +71,14 @@
 
 @todo
 
+[What happens if you call `res.end()` twice in an HTTP server?](./Q-1778590525235.md)
+
+Do practical example of this, check all the listed scenarios.  
+
+---
+
+@todo
+
 [Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
 
 Need to revisit this question and prepare this generally such that it can be applied to any backend technology (Node.js, Python, PHP etc.) or cloud platform (AWS, Azure etc.).
