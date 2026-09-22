@@ -68,34 +68,11 @@
 64. [`fs.readFile()` vs `fs.readFileSync()` vs `fs.createReadStream()` OR How do you handle file system operations in Node.js?](./Q-1786451079879.md)
 65. [File download endpoint for large file](./Q-1789998712358.md)
 66. [Promises/async-await in browsers vs Promises/async-await in Node.js](./Q-1789997615120.md)
+67. [What is PM2 and how does it help in managing Node.js applications in production?](./Q-1790058505766.md)
 
 ---
 
-## Backlog
-
----
-
-@todo
-
-[What happens if you call `res.end()` twice in an HTTP server?](./Q-1778590525235.md)
-
-Do practical example of this, check all the listed scenarios.  
-
----
-
-@todo
-
-[Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
-
-Need to revisit this question and prepare this generally such that it can be applied to any backend technology (Node.js, Python, PHP etc.) or cloud platform (AWS, Azure etc.).
-
----
-
-https://www.youtube.com/watch?v=_eJ6KAb56Gw
-
-Check the example.
-
----
+## Short-listed Items from the Backlog
 
 @todo
 
@@ -126,31 +103,39 @@ For all 3 patterns
 
 @todo
 
-[What is clustering in Node.js and when should it be used?](./Q-1777296825038.md)
+https://www.youtube.com/watch?v=_eJ6KAb56Gw
 
-Explore more about the following:  
-For production, use process managers like PM2, which provide built-in clustering, monitoring, and zero-downtime restarts.
-
-Hands-on example
+Check the example.
 
 ---
 
-@todo
+req.params vs req.query
 
-[How would you handle rate limiting in a Node.js API?](./Q-1777296664809.md)
+www.goodreads.com/books/99
 
-General concept of rate limiting - what, why, how?  
+req.params.id is 99
 
-Rate limiting algorithms  
-https://docs.arcjet.com/rate-limiting/algorithms  
+query string is everything that comes after ? in the URL.
 
-How to do it in Nest.js project?  
+---
 
-Hands-on examples for Express  
+What is body-parser & what does it do?
 
-Hands-on examples for Nest.js  
+Body-parser is the Node.js body parsing middleware.  
+It is responsible for parsing the incoming request bodies  
+in a middleware before you handle it.  
 
-Is there a way to bypass/whitelist specific IP from rate limiting?
+---
+
+What security mechanisms are available in Node.js?  
+
+Standard security module in Node.js is "helmet".  
+
+X-Frame-Options
+
+XSS Protection
+
+Strict Transport Security
 
 ---
 
@@ -179,20 +164,9 @@ References:
 
 @todo
 
-Refer [How do you handle large file uploads efficiently in Node.js?](./Q-1777296422940.md)
-
-large file uploads
-
-Hands-on example  
-* Large file upload on the server disk
-* Large file upload directly on the cloud storage (S3, GCS)
-
----
-
-@todo
-
 In case when we have multiple modules grouped together into one big module,  
 for example - lets say we have a "finance" module that contains the following modules:  
+
 * loan
 * insurance
 * savings
@@ -215,8 +189,57 @@ const require = createRequire(import.meta.url);
 
 ```
 
-* What is PM2 and how does it help in managing Node.js applications in production?
-[PM2 - Advanced Production Process Manager for Node.js](https://pm2.keymetrics.io/)
+---
+
+## Backlog
+
+---
+
+@todo
+
+[What happens if you call `res.end()` twice in an HTTP server?](./Q-1778590525235.md)
+
+Do practical example of this, check all the listed scenarios.  
+
+---
+
+@todo
+
+[Scenario: You noticed a sudden increase in latency for your Node.js application hosted on AWS. How would you investigate and resolve this issue?](./Q-1777296475100.md)
+
+Need to revisit this question and prepare this generally such that it can be applied to any backend technology (Node.js, Python, PHP etc.) or cloud platform (AWS, Azure etc.).
+
+---
+
+@todo
+
+[How would you handle rate limiting in a Node.js API?](./Q-1777296664809.md)
+
+General concept of rate limiting - what, why, how?  
+
+Rate limiting algorithms  
+https://docs.arcjet.com/rate-limiting/algorithms  
+
+How to do it in Nest.js project?  
+
+Hands-on examples for Express  
+
+Hands-on examples for Nest.js  
+
+Is there a way to bypass/whitelist specific IP from rate limiting?
+
+---
+
+@todo
+
+Refer [How do you handle large file uploads efficiently in Node.js?](./Q-1777296422940.md)
+
+large file uploads
+
+Hands-on example  
+
+* Large file upload on the server disk
+* Large file upload directly on the cloud storage (S3, GCS)
 
 ---
 
