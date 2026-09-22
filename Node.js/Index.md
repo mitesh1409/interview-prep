@@ -70,37 +70,11 @@
 66. [Promises/async-await in browsers vs Promises/async-await in Node.js](./Q-1789997615120.md)
 67. [What is PM2 and how does it help in managing Node.js applications in production?](./Q-1790058505766.md)
 68. [How to import modules which don't support ESM? OR When to use `createRequire` (from `module` - built-in Node.js core module) in ESM?](./Q-1790061829436.md)
+69. [How to implement authentication like Netflix, Amazon Prime etc. OTT platforms where multiple user logins are allowed.](./Q-1790064588679.md)
 
 ---
 
 ## Short-listed Items from the Backlog
-
-@todo
-
-Authentication
-
-Stateful Authentication
-
-Stateless Authentication
-
-Stateful + Stateless Authentication
-
-Refer - Point #24 at https://github.com/mitesh1409/nodejs-master/blob/main/Piyush-Garg-Node.js.md
-
-How to implement authentication like Netflix, Amazon Prime etc. OTT platforms where  
-multiple user logins are allowed.  
-
-It has a max limit of user logins, once max limit is reached it asks newly logged in user  
-to logout of anyone account.
-
-For all 3 patterns  
-
-- List down HLD + LLD  
-- Hands-on examples  
-- Pros and Cons
-- When to use what
-
----
 
 @todo
 
