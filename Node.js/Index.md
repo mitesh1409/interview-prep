@@ -69,6 +69,7 @@
 65. [File download endpoint for large file](./Q-1789998712358.md)
 66. [Promises/async-await in browsers vs Promises/async-await in Node.js](./Q-1789997615120.md)
 67. [What is PM2 and how does it help in managing Node.js applications in production?](./Q-1790058505766.md)
+68. [How to import modules which don't support ESM? OR When to use `createRequire` (from `module` - built-in Node.js core module) in ESM?](./Q-1790061829436.md)
 
 ---
 
@@ -177,17 +178,6 @@ etc.
 How do we organise it?  
 How to import/export "finance" module?  
 Can we use index.js in such scenario? or is there a way without using index.js?  
-
----
-
-```javascript
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
-
-// And then we can use require function to import modules which don't support ESM.
-
-```
 
 ---
 
